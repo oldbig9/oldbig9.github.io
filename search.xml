@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>Manjaro升级导致的VirtualBox若干问题</title>
+      <link href="/2020/05/08/Linux/Manjaro/Manjaro%E5%8D%87%E7%BA%A7%E5%AF%BC%E8%87%B4%E7%9A%84VirtualBox%E8%8B%A5%E5%B9%B2%E9%97%AE%E9%A2%98/"/>
+      <url>/2020/05/08/Linux/Manjaro/Manjaro%E5%8D%87%E7%BA%A7%E5%AF%BC%E8%87%B4%E7%9A%84VirtualBox%E8%8B%A5%E5%B9%B2%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ol><li><p>VERR_VM_DRIVER_NOT_INSTALLED</p><p> 解决办法，安装对应内核的host module，例:</p><p> 查看当前内核版本:</p><p> <code>uname -r</code></p><p> 安装相关依赖:</p><p> <code>sudo pacman -S linux56-virtualbox-host-modules</code></p><p> 安装过程会提示执行</p><p> <code>sudo modeprobe vboxdrv</code></p></li><li><p>VERR_SUPDRV_COMPONENT_NOT_FOUND</p><p> 解决办法，执行下面命令</p><p> <code>sudo modprobe vboxnetflt</code></p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+          <category> Manjaro </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Ubuntu安装软件依赖不满足问题</title>
       <link href="/2020/05/08/Linux/Ubuntu/Ubuntu%E5%86%85%E6%A0%B8%E4%BE%9D%E8%B5%96%E9%97%AE%E9%A2%98/"/>
       <url>/2020/05/08/Linux/Ubuntu/Ubuntu%E5%86%85%E6%A0%B8%E4%BE%9D%E8%B5%96%E9%97%AE%E9%A2%98/</url>
