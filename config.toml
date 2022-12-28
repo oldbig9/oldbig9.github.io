@@ -3,8 +3,6 @@ languageCode = 'zh_CN'
 title = 'Whatever'
 theme = 'm10c'
 
-avatar = ''
-
 [menu]
   [[menu.main]]
     identifier = "home"
@@ -24,6 +22,7 @@ avatar = ''
 
 [params]
   author = "oldbig9"
+  avatar = './static/images/avatar.png'
   description = "To do nothing, is the way to be nothing."
   menu_item_separator = " | "
   [[params.social]]
