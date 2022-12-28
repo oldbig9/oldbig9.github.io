@@ -1,4 +1,4 @@
-baseURL = 'http://oldbig9.'
+baseURL = 'https://oldbig9.github.io'
 languageCode = 'zh_CN'
 title = 'Whatever'
 theme = 'm10c'
