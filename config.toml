@@ -2,6 +2,7 @@ baseURL = "https://oldbig9.github.io"
 languageCode = "zh_CN"
 title = "Whatever"
 theme = "m10c"
+buildFuture = true
 
 [taxonomies]
 tag = "tags"
