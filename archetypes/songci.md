@@ -6,3 +6,7 @@ categories:
 - 宋词
 ---
 
+## <center>{{ replace .Name "-" " " | title }}</center>
+**<center></center>**
+
+> 
