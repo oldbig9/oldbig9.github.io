@@ -12,23 +12,23 @@ category = "categories"
 [menu]
   [[menu.main]]
     identifier = "home"
-    name = "Home"
+    name = "首页"
     url = "/"
     weight = 1
   [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
+    identifier = "songci"
+    name = "宋词"
+    url = "/songci/"
     weight = 2
   [[menu.main]]
-    identifier = "categories"
-    name = "Cates"
-    url = "/categories/"
+    identifier = "tech"
+    name = "技术"
+    url = "/tech/"
     weight = 3
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
     weight = 4
 
 [params]
