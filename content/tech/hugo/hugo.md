@@ -8,27 +8,27 @@ categories:
 - tech
 ---
 
-# 1.创建Github仓库
+## 1.创建Github仓库
 开启GitHub Pages功能
 
-# 2.Actions添加workflow
+## 2.Actions添加workflow
 选择Pages分类下的hugo，点击configure按钮可以自动生成配置文件(基本不需要改动)，按提示往下走即可
 
 push代码后即可触发workflow
 
-# hugo主题要求
+## hugo主题要求
 1. 支持切换亮暗模式
 2. 支持展示文章大纲
 3. 站内搜索
 4. 代码块快捷复制
 
 
-# 遇到的坑
+## 遇到的坑
 
-## 1.文章不展示问题
+### 1.文章不展示问题
 content目录下增加了几个子目录，但创建文章编译后不展示
 
-### 原因
+#### 原因
 hugo默认不会编译未来时间的文章，我修改了文章模板date格式(没有指定时区)，导致hugo编译时认为文章时间是未来时间，就不会编译这篇文章
 
 archetypes/default.md
@@ -41,7 +41,7 @@ draft: true
 ```
 
 
-### 解决方法一
+#### 解决方法一
 模板中指定时区或者使用hugo默认格式
 
 ```yml
@@ -60,7 +60,7 @@ draft: true
 ---
 ```
 
-### 解决方法二
+#### 解决方法二
 config.toml中增加如下配置
 
 ```toml
