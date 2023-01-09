@@ -3,7 +3,7 @@ languageCode = "zh_CN"
 title = "Whatever"
 theme = "m10c"
 buildFuture = true
-paginate = 10
+paginate = 15
 
 [taxonomies]
 tag = "tags"
