@@ -1,6 +1,6 @@
 baseURL = "https://oldbig9.github.io"
 languageCode = "zh_CN"
-title = "Whatever"
+title = "oldbig9"
 theme = "m10c"
 buildFuture = true
 paginate = 12
@@ -35,7 +35,7 @@ category = "categories"
 [params]
   author = "oldbig9"
   avatar = "images/avatar.png"
-  description = "To do nothing, is the way to be nothing."
+  description = " "
   menu_item_separator = " | "
   [[params.social]]
     icon = "github"
