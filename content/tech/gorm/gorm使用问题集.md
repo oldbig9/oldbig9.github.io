@@ -2,6 +2,8 @@
 title: "gorm使用问题集"
 date: 2023-01-12 11:04:23
 draft: false
+tags:
+- gorm
 categories:
 - tech
 ---
