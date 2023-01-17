@@ -34,7 +34,7 @@ category = "categories"
 
 [params]
   author = "oldbig9"
-  avatar = "images/avatar.png"
+  avatar = "images/dog.jpg"
   description = " "
   menu_item_separator = " | "
   [[params.social]]
