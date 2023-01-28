@@ -17,8 +17,8 @@ category = "categories"
     url = "/"
     weight = 1
   [[menu.main]]
-    identifier = "songci"
-    name = "宋词"
+    identifier = "shici"
+    name = "诗词"
     url = "/songci/"
     weight = 2
   [[menu.main]]
