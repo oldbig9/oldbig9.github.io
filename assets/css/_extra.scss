@@ -1,0 +1,41 @@
+@media (min-width: 940px) {
+    .app-container {
+        max-width: 80em;
+        margin-left: 20rem;
+        display: grid;
+        grid-template-areas:
+        "content sidebar";
+        justify-items: start;
+    }
+
+
+
+    article {
+        grid-area: content;
+    }
+
+    aside {
+        grid-area: sidebar;
+    }
+}
+
+.post-content > pre, .post-content .highlight > pre, .post-content .highlight > div {
+    border-left: 0;
+    line-height: 1.2em;
+    code {
+        font-family: 'fira code',monospace,monospace;
+        font-size: 1em;
+        color: rgba($light-color, .8);
+        border-left: 0;
+    }
+}
+
+.post-content > pre{
+    line-height: 1.2em;
+    code {
+        font-family: 'fira code',monospace,monospace;
+        font-size: 1em;
+        color: rgba($light-color, .8);
+        border-left: 0;
+    }
+}
