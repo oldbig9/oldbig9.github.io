@@ -5,7 +5,7 @@
         display: grid;
         grid-template-areas:
         "content sidebar";
-        justify-items: start;
+        justify-items: stretch;
     }
 
 
@@ -20,6 +20,11 @@
 
     .posts-list {
         min-width: 60em;
+    }
+
+    .post-content {
+        min-width: 40em;
+        max-width: 60em;
     }
 }
 
