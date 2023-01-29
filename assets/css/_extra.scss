@@ -17,20 +17,14 @@
     aside {
         grid-area: sidebar;
     }
+
+    .posts-list {
+        min-width: 60em;
+    }
 }
 
 .post-content > pre, .post-content .highlight > pre, .post-content .highlight > div {
     border-left: 0;
-    line-height: 1.2em;
-    code {
-        font-family: 'fira code',monospace,monospace;
-        font-size: 1em;
-        color: rgba($light-color, .8);
-        border-left: 0;
-    }
-}
-
-.post-content > pre{
     line-height: 1.2em;
     code {
         font-family: 'fira code',monospace,monospace;
