@@ -30,10 +30,10 @@
 
 .post-content > pre, .post-content .highlight > pre, .post-content .highlight > div {
     border-left: 0;
-    line-height: 1.2em;
+    line-height: 1em;
     code {
         font-family: 'fira code',monospace,monospace;
-        font-size: 1em;
+        font-size: 0.8em;
         color: rgba($light-color, .8);
         border-left: 0;
     }
