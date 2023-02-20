@@ -1,3 +1,28 @@
+// 方正兰亭圆简纤
+@font-face {
+    font-family: "fzlantyjw_xian";
+    src: url("/fonts/FZLanTYJW_Xian_124806.TTF")
+}
+
+// 方正苏新诗古印宋
+@font-face {
+    font-family: "fzsuxsgys";
+    src: url("/fonts/FZSuXSGYSJW_125032.TTF")
+}
+
+// fira code
+@font-face {
+    font-family: "fira_code";
+    src: url("/fonts/FiraCode-Regular.ttf")
+}
+
+body {
+    margin: 0;
+    font-family: "fzlantyjw_xian";
+    background: $dark-color;
+    color: $light-color;
+}
+
 @media (min-width: 940px) {
     .app-container {
         max-width: 80em;
@@ -32,9 +57,13 @@
     border-left: 0;
     line-height: 1em;
     code {
-        font-family: 'fira code',monospace,monospace;
+        font-family: 'fira_code',monospace,monospace;
         font-size: 0.8em;
         color: rgba($light-color, .8);
         border-left: 0;
     }
+}
+
+.app-header > p, .app-header-title {
+    font-family: "fzsuxsgys";
 }
