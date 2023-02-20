@@ -5,10 +5,10 @@
 }
 
 // 方正苏新诗古印宋
-@font-face {
-    font-family: "fzsuxsgys";
-    src: url("/hugo-blog/fonts/FZSuXSGYSJW_125032.TTF")
-}
+// @font-face {
+//     font-family: "fzsuxsgys";
+//     src: url("/hugo-blog/fonts/FZSuXSGYSJW_125032.TTF")
+// }
 
 // fira code
 @font-face {
@@ -62,8 +62,4 @@ body {
         color: rgba($light-color, .8);
         border-left: 0;
     }
-}
-
-.app-header > p, .app-header-title {
-    font-family: "fzsuxsgys";
 }
