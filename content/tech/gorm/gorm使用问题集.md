@@ -77,7 +77,9 @@ func (db *DB) SetConnMaxLifetime(d time.Duration) {
 
 ### 解决方式
 
-获取DB实例时，若实例Ping()失败则重新建立连接
+~~获取DB实例时，若实例Ping()失败则重新建立连接~~
+
+更正，gorm本身维护的就是一个连接池，即使连接实例被断开也会自动重连，不需关心实例是否被断开了
 ```go
 var db *gorm.DB
 ...
@@ -85,10 +87,6 @@ func GetDB() *gorm.DB {
 	sqlDB, err := db.DB()
 	if err != nil {
 		// do something
-	}
-
-	if err := sqlDB.Ping(); err != nil {
-		// 重新建立连接
 	}
 }
 ```
