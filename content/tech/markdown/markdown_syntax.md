@@ -2,7 +2,8 @@
 title: "Markdown_syntax"
 date: 2023-02-21 17:55:47
 draft: false
-tags: -markdown
+tags: 
+  - markdown
 categories:
   - tech
 ---
