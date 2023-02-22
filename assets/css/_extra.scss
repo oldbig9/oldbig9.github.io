@@ -49,10 +49,10 @@ body {
 
 .post-content > pre, .post-content .highlight > pre, .post-content .highlight > div {
     border-left: 0;
-    line-height: 1em;
+    line-height: 1.2em;
     code {
         font-family: 'fira_code',monospace,monospace;
-        font-size: 0.8em;
+        font-size: 1em;
         color: rgba($light-color, .8);
         border-left: 0;
     }
