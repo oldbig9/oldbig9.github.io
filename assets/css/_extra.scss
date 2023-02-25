@@ -8,7 +8,12 @@ body {
 
 .app-container > .songci {
     font-family: '方正瘦金书简体', '方正兰亭圆简体_纤',  monospace;
-    font-size: 1.6em;
+    font-size: 1.4em;
+}
+
+.posts-list, article > h1 {
+    font-family: '方正瘦金书简体', '方正兰亭圆简体_纤',  monospace;
+    font-size: 1.2em;
 }
 
 @media (min-width: 940px) {
