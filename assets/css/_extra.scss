@@ -6,16 +6,6 @@ body {
     color: $light-color;
 }
 
-.app-container > .songci {
-    font-family: '方正瘦金书简体', '方正兰亭圆简体_纤',  monospace;
-    font-size: 1.4em;
-}
-
-.posts-list, article > h1 , .app-container > article > .tags-list {
-    font-family: '方正瘦金书简体', '方正兰亭圆简体_纤',  monospace;
-    font-size: 1.2em;
-}
-
 @media (min-width: 940px) {
     .app-container {
         max-width: 80em;
@@ -44,11 +34,6 @@ body {
         min-width: 40em;
         max-width: 60em;
     }
-}
-
-.app-header{
-    font-family: '方正瘦金书简体', monospace;
-    font-size: 1.2em;
 }
 
 .app-header-social {
