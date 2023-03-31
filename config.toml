@@ -34,8 +34,8 @@ category = "categories"
 
 [params]
   author = "oldbig9"
-  avatar = "images/jellyfish.png"
-  description = "悟已往之不谏，知来者之可追"
+  avatar = "images/1988.png"
+  description = " "
   menu_item_separator = " | "
   [[params.social]]
     icon = "github"
