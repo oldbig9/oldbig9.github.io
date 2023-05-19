@@ -105,10 +105,6 @@ git submodule [--quiet] absorbgitdirs [--] [<path>...]
 
 cherry-pick 的作用就是拣选某一个分支的 commit，自己经历过的一件事就是某次开发一个功能，里面又有很多小功能，产品要求先上线一个小功能，这时候 cherry-pick 就派上了用场
 
-查看某个分支commit
-
-`git log branch_name`
-
 使用方法\:
 
 `git cherry-pick commit-id [options]`
@@ -142,11 +138,12 @@ stash 命令是储藏的意思，当我们希望切换分支但是当前分支�
 
   `git stash pop stash-order` 使用该储藏，并将该储藏从 stash 列表中删除
 
-## 4. 查看 commit 记录及修改内容\:git log + git show commit-id
+## 4. 查看 commit 记录
 
-`git log` 查看 commit 记录
-
-`git show commit-id` 查看某个 commit 的修改内容
+- `git log` 查看 commit 记录
+- `git show commit-id` 查看某个 commit 的修改内容
+- `git log <branch-name>` 查看某个分支的commit记录
+- `git log -grep=<commit-msg>` 模糊搜索提交信息相关的commit 
 
 ## 5. 查看某个文件的修改历史
 
