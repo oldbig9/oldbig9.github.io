@@ -34,3 +34,9 @@ go get -u gorm.io/gorm
 ```shell
 go get -u github.com/tidwall/gjson
 ```
+
+## 配置管理库
+
+### viper
+
+[viper](https://github.com/spf13/viper)
