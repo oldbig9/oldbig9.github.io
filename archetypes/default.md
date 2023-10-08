@@ -1,6 +1,10 @@
 ---
+weight: 100
 title: "{{ replace .Name "-" " " | title }}"
-date: {{ now.Format "2006-01-02 15:04:05" }}
+description: ""
+icon: "article"
+date: "{{ .Date }}"
+lastmod: "{{ .Date }}"
 draft: true
+toc: true
 ---
-
