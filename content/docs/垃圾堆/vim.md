@@ -1,5 +1,5 @@
 ---
-title: "Vim"
+title: "Vim配置"
 date: 2023-01-31 19:17:47
 draft: false
 tags:

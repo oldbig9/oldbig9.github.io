@@ -1,7 +1,7 @@
 ---
 weight: 300
-title: "Tech"
-description: "Example of a folder at the root of the content tree (under `/docs`)"
+title: "Docs"
+description: ""
 icon: "folder"
 date: "2023-05-22T00:34:57+01:00"
 lastmod: "2023-05-22T00:34:57+01:00"

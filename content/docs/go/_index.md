@@ -1,5 +1,5 @@
 ---
-weight: 300
+weight: 1
 title: "Go"
 description: "Go语言学习笔记"
 icon: "folder"
