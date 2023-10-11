@@ -49,7 +49,7 @@ defaultContentLanguage = 'en'
   mono_font       = "方正兰亭圆简体_纤" # Default is System font
 
     [params.footer]
-        copyright = "© :YEAR: Lotus Labs. Built with [**Lotus Docs**](https://github.com/colinwilson/lotusdocs)"
+        copyright = "© :YEAR: Built with [**Lotus Docs**](https://github.com/colinwilson/lotusdocs)"
         # version = true # includes git commit info
 
     [params.social]
@@ -89,7 +89,7 @@ defaultContentLanguage = 'en'
 
         # front matter
         descriptions    = true                                # enable front matter descriptions under content title?
-        titleIcon       = true                                # enable front matter icon title prefix? default is false
+        titleIcon       = false                                # enable front matter icon title prefix? default is false
 
         # content navigation
         navDesc         = true                                # include front matter descriptions in Prev/Next navigation cards
