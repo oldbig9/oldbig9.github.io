@@ -63,13 +63,13 @@ defaultContentLanguage = 'en'
 
         pathName        = "docs"                              # path name for documentation site | default "docs"
 
-        themeColor      = "emerald"                           # (optional) - Set theme accent colour. Options include: blue (default), green, red, yellow, emerald, cardinal, magenta, cyan
+        themeColor      = "cyan"                           # (optional) - Set theme accent colour. Options include: blue (default), green, red, yellow, emerald, cardinal, magenta, cyan
 
         darkMode        = true                                # enable dark mode option? default false
 
         prism           = true                                # enable syntax highlighting via Prism
 
-        prismTheme      = "twilight"                   # (optional) - Set theme for PrismJS. Options include: lotusdocs (default), solarized-light, twilight, lucario
+        prismTheme      = "lucario"                   # (optional) - Set theme for PrismJS. Options include: lotusdocs (default), solarized-light, twilight, lucario
 
         # gitinfo
         repoURL         = "https://github.com/oldbig9/hugo-blog"  # Git repository URL for your site [support for GitHub, GitLab, and BitBucket]
