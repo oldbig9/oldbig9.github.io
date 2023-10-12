@@ -1,5 +1,6 @@
 ---
-title: "Hugo + Github Actions -> Github Pages"
+title: "Hugo建站"
+description: "使用Hugo、Github Actions、Github Pages搭建静态博客网站"
 date: 2022-12-26 22:38:14
 draft: false
 tags:
@@ -17,10 +18,11 @@ categories:
 push代码后即可触发workflow
 
 ## hugo主题要求
-1. 支持切换亮暗模式
-2. 支持展示文章大纲
-3. 站内搜索
-4. 代码块快捷复制
+1. 简洁，依赖少
+2. 支持切换亮暗模式或主题颜色
+3. 支持展示文章大纲
+4. 站内搜索
+5. 代码块快捷复制
 
 
 ## 遇到的坑
