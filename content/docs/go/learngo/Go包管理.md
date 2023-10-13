@@ -141,13 +141,13 @@ go env -w GOPROXY=https://goproxy.cn,direct
 
 go 项目中如果需要引入私有模块，则需要做如下修改
 
-1. 设置 GOPRIVATE，多个 private 使用逗号分隔
+1.设置 GOPRIVATE，多个 private 使用逗号分隔
 
 ```bash
 go env -w GOPRIVATE=github.com/ereshzealous
 ```
 
-2. 修改 Git 配置
+2.修改 Git 配置
 
 ```bash
 git config --global url."https://${username}:${access_token}@github.com".insteadOf /
