@@ -40,13 +40,12 @@ defaultContentLanguage = 'en'
 [params]
 
   google_fonts = [
-    ["Inter", "300, 400, 600, 700"],
-    ["方正兰亭圆简体_纤", "500, 700"]
+    ["方正兰亭圆简体_细", "500, 700"]
   ]
 
-  sans_serif_font = "Inter"     # Default is System font
-  secondary_font  = "Inter"     # Default is System font
-  mono_font       = "方正兰亭圆简体_纤" # Default is System font
+  sans_serif_font = "方正兰亭圆简体_细"     # Default is System font
+  secondary_font  = "方正兰亭圆简体_细"     # Default is System font
+  mono_font       = "Fira Code" # Default is System font
 
     [params.footer]
         copyright = "© :YEAR: Built with [**Lotus Docs**](https://github.com/colinwilson/lotusdocs)"
