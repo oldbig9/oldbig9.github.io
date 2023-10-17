@@ -40,7 +40,7 @@ func main() {
         return
     }
 
-    fmt.Println(string(bf.Bytes()))
+    fmt.Println(string(bf.Bytes())) // {"a":"a","b":"b"}
 }
 ```
 
