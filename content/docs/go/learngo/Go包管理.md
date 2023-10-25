@@ -76,8 +76,9 @@ use         add modules to workspace file
 
 ## module 版本管理
 
-### release 版本(tag)
+### semantic versioning
 
+major.minor.patch
 ```plaintext
 v1.26.0
  | |  |_ _  修订号：做了向下兼容的问题补丁修正时更改修订号
@@ -87,7 +88,7 @@ v1.26.0
  |_ _ _ _ _ 主版本号: 做了不兼容更新时更改主版本号
 ```
 
-### 伪版本(Pseudo-versions)
+### Pseudo-versions(伪版本)
 
 伪版本格式主要分为三部分
 
@@ -153,3 +154,50 @@ go env -w GOPRIVATE=github.com/ereshzealous
 git config --global url."https://${username}:${access_token}@github.com".insteadOf /
 "https://github.com"
 ```
+
+## 钻石依赖问题
+
+日常业务开发中，可能会遇到下面这种情况。
+
+```plaintext
+package A 依赖 package C v1.2.3
+package B 依赖 package C v2.3.4
+```
+
+**go解决方案**
+
+- major复合包含，当同时依赖C v1 v2版本时，v2版本的import路径需要加上/v2后缀(如beego v2版本, go-redis v9版本)
+- minor最小版本兼容，当依赖C大版本相同时，会选择依赖的C版本中最新的一个，即最小可用版本(前提是最新版本兼容之前的版本)
+
+但是还有很多场景下依赖的package并没有按照规范的版本定义去发布版本，这就会导致相同大版本并不兼容的情况
+
+如：
+
+beego v2.0.5依赖了https://pkg.go.dev/go.opentelemetry.io/otel@v1.8.0/internal
+
+而项目中另一个包依赖了https://pkg.go.dev/go.opentelemetry.io/otel@v1.3.0/internal
+
+由于版本不兼容，导致下载该依赖包时实际下载为该包最新版本v1.19（仍旧没有兼容v1.3.0），导致下载依赖失败
+
+```bash
+$ go mod tidy -compat=1.17
+...
+go: downloading go.opentelemetry.io/otel v1.8.0
+...
+go: downloading go.opentelemetry.io/otel v1.19.0
+...
+	go.opentelemetry.io/otel/bridge/opentracing imports
+        go.opentelemetry.io/otel/internal/trace/noop: module go.opentelemetry.io/otel@latest found (v1.19.0), but does not contain package go.opentelemetry.io/otel/internal/trace/noop
+```
+
+`go mod why`命令并没有显示有其他包依赖了该包
+
+使用`go mod graph`命令，发现beego依赖了该包
+```bash
+$ go mod graph
+...
+github.com/beego/beego/v2@v2.0.5 go.opentelemetry.io/otel@v1.8.0
+...
+```
+
+解决方案，beego版本降级或改为gin web框架
