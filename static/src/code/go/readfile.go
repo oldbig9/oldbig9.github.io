@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"os"
 )
 
 func main() {
-	content, err := ioutil.ReadFile("./channel.go")
+	content, err := os.ReadFile("./channel.go")
 	if err != nil {
 		fmt.Printf("read file failed, %v\n", err)
 	} else {
