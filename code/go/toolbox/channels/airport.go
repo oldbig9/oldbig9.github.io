@@ -1,4 +1,4 @@
-package main
+package channels
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ const (
 	timeCostXrayCheck = 240
 )
 
-func main() {
+func AirPort() {
 	passengers := 30
 	serialCheck(passengers)
 	concurrencyCheck(passengers)
