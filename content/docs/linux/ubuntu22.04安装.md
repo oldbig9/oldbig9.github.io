@@ -37,8 +37,6 @@ categories:
 
 xorg不支持针对单个显示器独立设置缩放比例；wayland可以针对单个显示器设置缩放比例，但是效果不太好
 
-
-
 ### 分数倍数缩放(fractinal scaling)
 
 可以通过如下命令进行修改，或者直接桌面操作打开相关配置即可
@@ -109,3 +107,22 @@ sudo snap remove firefox
 ```
 
 [如何在 ubuntu22.04 上安装火狐 .deb 软件包（而非 snap 软件包）[翻译自 omgubuntu] - Ubuntu 中文论坛](https://forum.ubuntu.com.cn/viewtopic.php?f=1&t=493123)
+
+### 安装docker
+
+[Install Docker Engine on Ubuntu | Docker Docs](https://docs.docker.com/engine/install/ubuntu/)
+
+[Install the Compose plugin | Docker Docs](https://docs.docker.com/compose/install/linux/)
+
+
+
+linux环境下，docker默认是root用户才可以运行，非root用户想要运行docker命令，需做以下修改
+
+```bash
+# 新建docker用户组
+sudo groupadd docker
+# 将当前用户加入docker用户组
+sudo gpasswd -a $USER docker
+# 更新docker用户组
+newgrp docker
+```

@@ -11,6 +11,7 @@ categories:
 ## rsync code 23
 
 报错：
+
 ```bash
 rsync files to /home/path/xxx failed, ['could not make way for new regular file: xxx/.git', 'rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1039)']
 ```

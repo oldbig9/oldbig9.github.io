@@ -10,21 +10,21 @@ categories:
 
 ## 基本命令
 
-| 模块      | 功能                 | 命令                                                           |
-| :-------- | :------------------- | :------------------------------------------------------------- |
-| repo      | 登录仓库             | docker login [private repo] -u username -p password            |
-| image     | 打包镜像             | docker build . -t name:tag --build-arg VERSION=v1              |
-| image     | 拉取镜像             | docker pull [name:tag]                                         |
-| image     | 列出所有镜像         | docker images 或 docker image ls                               |
-| image     | 删除镜像             | docker image rm [name:tag\|image id]                           |
+| 模块        | 功能         | 命令                                                             |
+|:--------- |:---------- |:-------------------------------------------------------------- |
+| repo      | 登录仓库       | docker login [private repo] -u username -p password            |
+| image     | 打包镜像       | docker build . -t name:tag --build-arg VERSION=v1              |
+| image     | 拉取镜像       | docker pull [name:tag]                                         |
+| image     | 列出所有镜像     | docker images 或 docker image ls                                |
+| image     | 删除镜像       | docker image rm [name:tag\|image id]                           |
 | image     | 删除所有不使用的镜像 | docker image prune [--force --all \| -f -a]                    |
-| container | 列出运行中的容器     | docker container [list\|ls]                                    |
-| container | 列出运行中的容器     | docker ps                                                      |
-| container | 列出所有容器         | docker container list -a                                       |
-| container | 启动容器             | docker run -p 8080:8080 --name test -it [name:tag \| image id] |
-| container | 启动容器             | docker start [container name \| container id]                  |
-| container | 进入容器             | docker exec [OPTIONS] CONTAINER COMMAND [ARG...]               |
-| container | 删除所有停止的容器   | docker container prune -f                                      |
+| container | 列出运行中的容器   | docker container [list\|ls]                                    |
+| container | 列出运行中的容器   | docker ps                                                      |
+| container | 列出所有容器     | docker container list -a                                       |
+| container | 启动容器       | docker run -p 8080:8080 --name test -it [name:tag \| image id] |
+| container | 启动容器       | docker start [container name \| container id]                  |
+| container | 进入容器       | docker exec [OPTIONS] CONTAINER COMMAND [ARG...]               |
+| container | 删除所有停止的容器  | docker container prune -f                                      |
 
 ## Dockerfile 打包镜像
 
@@ -38,17 +38,17 @@ categories:
 FROM golang:alpine as builder
 LABEL maintainer "Jessie Frazelle <jess@linux.com>"
 
-RUN	apk --no-cache add \
-	ca-certificates \
-	git
+RUN    apk --no-cache add \
+    ca-certificates \
+    git
 
 ENV PATH /go/bin:/usr/local/go/bin:$PATH
 ENV GOPATH /go
 
 RUN go get github.com/kellegous/go || true \
-	&& cd /go/src/github.com/kellegous/go \
-	&& go build ./cmd/go \
-	&& mv go /usr/bin/go
+    && cd /go/src/github.com/kellegous/go \
+    && go build ./cmd/go \
+    && mv go /usr/bin/go
 
 
 FROM alpine:latest
