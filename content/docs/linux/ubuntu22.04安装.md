@@ -114,8 +114,6 @@ sudo snap remove firefox
 
 [Install the Compose plugin | Docker Docs](https://docs.docker.com/compose/install/linux/)
 
-
-
 linux环境下，docker默认是root用户才可以运行，非root用户想要运行docker命令，需做以下修改
 
 ```bash
@@ -125,4 +123,67 @@ sudo groupadd docker
 sudo gpasswd -a $USER docker
 # 更新docker用户组
 newgrp docker
+```
+
+
+
+### 安装软件依赖冲突问题
+
+解决方案
+
+#### aptitude工具
+
+```bash
+sudo apt install aptitude
+```
+
+使用aptitude替代apt安装软件，并根据提示使用aptitude建议的安装方案
+
+```bash
+sudo aptitude install gimp
+```
+
+
+
+#### flapak
+
+该方案不算是解决依赖冲突，而是使用了另一种方式安装软件; 这种安装包一般都是直接提供了软件所有的依赖，所以软件包体积非常大
+
+1.安装flatpak[Ubuntu Flathub Setup | Flathub](https://flathub.org/setup/Ubuntu)
+
+```bash
+sudo apt install flatpak
+```
+
+2.添加镜像源
+
+应用商店 [https://flathub.org/](https://flathub.org/)
+
+```bash
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+```
+
+3.安装软件
+
+例如[Foliate | Flathub](https://flathub.org/apps/com.github.johnfactotum.Foliate)
+
+```bash
+flatpak install flathub com.github.johnfactotum.Foliate
+```
+
+```bash
+flatpak run com.github.johnfactotum.Foliate
+```
+
+4.flatpak应用图标
+
+flatpak安装的应用在`/var/lib/flatpak/app/`目录下，找到对应的软件包目录
+
+```bash
+# 进入软件目录
+cd /var/lib/flatpak/app/com.github.johnfactotum.Foliate/current/active/export/share
+# 拷贝desktop文件
+sudo cp applications/com.github.johnfactotum.Foliate.desktop /usr/share/applications/
+# 拷贝图标文件
+sudo cp -r icons/hicolor /usr/share/icons/
 ```
