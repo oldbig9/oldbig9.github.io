@@ -187,3 +187,21 @@ sudo cp applications/com.github.johnfactotum.Foliate.desktop /usr/share/applicat
 # 拷贝图标文件
 sudo cp -r icons/hicolor /usr/share/icons/
 ```
+
+
+
+### AppImage
+
+https://appimage.github.io/apps/
+
+该方案感觉比flatpak更方便，无需安装，只需要下载软件appImage包，运行该软件包即可
+
+
+
+### ubuntu无法识别u盘
+
+安装exfatprogs工具，待验证
+
+```bash
+sudo apt install exfatprogs
+```
