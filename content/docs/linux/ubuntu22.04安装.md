@@ -125,8 +125,6 @@ sudo gpasswd -a $USER docker
 newgrp docker
 ```
 
-
-
 ### 安装软件依赖冲突问题
 
 解决方案
@@ -142,8 +140,6 @@ sudo apt install aptitude
 ```bash
 sudo aptitude install gimp
 ```
-
-
 
 #### flapak
 
@@ -188,15 +184,11 @@ sudo cp applications/com.github.johnfactotum.Foliate.desktop /usr/share/applicat
 sudo cp -r icons/hicolor /usr/share/icons/
 ```
 
-
-
-### AppImage
+#### AppImage
 
 https://appimage.github.io/apps/
 
 该方案感觉比flatpak更方便，无需安装，只需要下载软件appImage包，运行该软件包即可
-
-
 
 ### ubuntu无法识别u盘
 
@@ -204,4 +196,20 @@ https://appimage.github.io/apps/
 
 ```bash
 sudo apt install exfatprogs
+```
+
+
+
+### vscode python无代码提示
+
+python可以安装pylance插件
+
+设置settings，配置如下
+
+```json
+
+"python.defaultInterpreterPath": "/usr/bin/python3", // python路径
+"python.analysis.extraPaths": [
+    "/home/wwf/.local/lib/python3.10/site-packages" // python本地安装包地址
+],
 ```
