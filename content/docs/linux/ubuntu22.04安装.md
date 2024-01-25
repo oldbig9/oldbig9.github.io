@@ -198,8 +198,6 @@ https://appimage.github.io/apps/
 sudo apt install exfatprogs
 ```
 
-
-
 ### vscode python无代码提示
 
 python可以安装pylance插件
@@ -207,9 +205,23 @@ python可以安装pylance插件
 设置settings，配置如下
 
 ```json
-
 "python.defaultInterpreterPath": "/usr/bin/python3", // python路径
 "python.analysis.extraPaths": [
     "/home/wwf/.local/lib/python3.10/site-packages" // python本地安装包地址
 ],
+```
+
+
+
+### 内存占用过高，系统卡死
+
+物理内存16G，swap分区2G
+
+扩大swap空间
+
+```bash
+sudo swapoff -a
+sudo fallocate -l 16G /swapfile
+sudo mkswap /swapfile
+sudo swapon -a
 ```
