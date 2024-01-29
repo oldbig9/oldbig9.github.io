@@ -17,7 +17,9 @@ toc: true
 FROM golang:1.20-alpine
 
 # install hugo extended edition
-# maybe install hugo via go get instead
+# maybe install hugo via go install instead and you can specify hugo version
+# but you need to change PATH definition or change the entrypoint
+# CGO_ENABLED=1 go install -tags extended github.com/gohugoio/hugo@latest
 RUN apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community hugo
 RUN apk add --no-cache git
 
@@ -48,3 +50,4 @@ docker run -it -p 1313:1313 -u $(id -u):$(id -g) -v $(pwd):/site --name hugo hug
 
 参考文档：
 - [https://gohugo.io/installation/linux/](https://gohugo.io/installation/linux/)
+- [https://github.com/gohugoio/hugo](https://github.com/gohugoio/hugo)
