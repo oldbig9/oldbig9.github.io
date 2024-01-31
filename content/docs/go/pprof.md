@@ -36,11 +36,11 @@ pprof 包初始化方法里注册了相关路由地址
 
 ```go
 func init() {
-	http.HandleFunc("/debug/pprof/", Index)
-	http.HandleFunc("/debug/pprof/cmdline", Cmdline)
-	http.HandleFunc("/debug/pprof/profile", Profile)
-	http.HandleFunc("/debug/pprof/symbol", Symbol)
-	http.HandleFunc("/debug/pprof/trace", Trace)
+    http.HandleFunc("/debug/pprof/", Index)
+    http.HandleFunc("/debug/pprof/cmdline", Cmdline)
+    http.HandleFunc("/debug/pprof/profile", Profile)
+    http.HandleFunc("/debug/pprof/symbol", Symbol)
+    http.HandleFunc("/debug/pprof/trace", Trace)
 }
 ```
 
@@ -51,14 +51,14 @@ package routers
 
 import (
     "github.com/gin-contrib/pprof"
-	"github.com/gin-gonic/gin"
+    "github.com/gin-gonic/gin"
 )
 
 func InitRouter() *gin.Engine{
     var router = gin.New()
 
-	// pprof
-	pprof.Register(router, "/model/dev/pprof")
+    // pprof
+    pprof.Register(router, "/model/dev/pprof")
 
     // do aomthing
 
@@ -125,18 +125,18 @@ go tool pprof --http=:8080 http://localhost:6060/debug/pprof/heap
 ```plaintext
 goroutine profile: total 58[总协程数量]
 5[此处即是该协程数量] @ 0x447b16 0x457592 0xf6fefb 0xf61ff6 0x478761
-#	0xf6fefa	github.com/pegasus-go-client/session.(*nodeSession).loopForDialing+0x7a	/home/wwf/go/src/demo/vendor/github.com/pegasus-go-client/session/session.go:150
-#	0xf61ff5	gopkg.in/tomb%2ev2.(*Tomb).run+0x35						/home/wwf/go/src/demo/vendor/gopkg.in/tomb.v2/tomb.go:163
+#    0xf6fefa    github.com/pegasus-go-client/session.(*nodeSession).loopForDialing+0x7a    /home/wwf/go/src/demo/vendor/github.com/pegasus-go-client/session/session.go:150
+#    0xf61ff5    gopkg.in/tomb%2ev2.(*Tomb).run+0x35                        /home/wwf/go/src/demo/vendor/gopkg.in/tomb.v2/tomb.go:163
 
 4 @ 0x447b16 0x457592 0xccdc25 0x478761
-#	0xccdc24	github.com/streaming/common/selfmetrics/falcon.(*Falcon).ReportRegistry+0xa4	/home/wwf/go/src/demo/vendor/github.com/streaming/LCSAgent-sdk/LCSAgent-sdk-golang/lcs/common/selfmetrics/falcon/falcon.go:73
+#    0xccdc24    github.com/streaming/common/selfmetrics/falcon.(*Falcon).ReportRegistry+0xa4    /home/wwf/go/src/demo/vendor/github.com/streaming/LCSAgent-sdk/LCSAgent-sdk-golang/lcs/common/selfmetrics/falcon/falcon.go:73
 
 3 @ 0x447b16 0x4130ec 0x412b58 0xb5c4c5 0x478761
-#	0xb5c4c4	gopkg.in/natefinch/lumberjack%2ev2.(*Logger).millRun+0x44	/home/wwf/go/src/demo/vendor/gopkg.in/natefinch/lumberjack.v2/lumberjack.go:379
+#    0xb5c4c4    gopkg.in/natefinch/lumberjack%2ev2.(*Logger).millRun+0x44    /home/wwf/go/src/demo/vendor/gopkg.in/natefinch/lumberjack.v2/lumberjack.go:379
 
 2 @ 0x447b16 0x440517 0x472769 0x4e3c32 0x4e4f9a 0x4e4f88 0x5e7089 0x5fad85 0x6e810d 0x56e783 0x56f36f 0x56f5c7 0x6736f9 0x6e34d9 0x6e34da 0x6e96aa 0x6edaab 0x478761
-#	0x472768	internal/poll.runtime_pollWait+0x88		/usr/local/go-1.18.9/src/runtime/netpoll.go:302
-#	0x4e3c31	internal/poll.(*pollDesc).wait+0x31		/usr/local/go-1.18.9/src/internal/poll/fd_poll_runtime.go:83
-#	0x4e4f99	internal/poll.(*pollDesc).waitRead+0x259	/usr/local/go-1.18.9/src/internal/poll/fd_poll_runtime.go:88
-#	0x4e4f87	internal/poll.(*FD).Read+0x247			/usr/local/
+#    0x472768    internal/poll.runtime_pollWait+0x88        /usr/local/go-1.18.9/src/runtime/netpoll.go:302
+#    0x4e3c31    internal/poll.(*pollDesc).wait+0x31        /usr/local/go-1.18.9/src/internal/poll/fd_poll_runtime.go:83
+#    0x4e4f99    internal/poll.(*pollDesc).waitRead+0x259    /usr/local/go-1.18.9/src/internal/poll/fd_poll_runtime.go:88
+#    0x4e4f87    internal/poll.(*FD).Read+0x247            /usr/local/
 ```

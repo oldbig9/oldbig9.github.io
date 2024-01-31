@@ -35,6 +35,7 @@ ENTRYPOINT ["hugo", "server", "-D", "--bind", "0.0.0.0"]
 ```
 
 > 注意 ENTRYPOINT 中 hugo 命令须增加参数`--bind 0.0.0.0`，否则宿主机无法访问
+> 因为hugo启动的服务绑定的localhost和127.0.0.1是容器本身，而非宿主机，所以需要使用--bind参数
 
 打包镜像
 
@@ -51,3 +52,4 @@ docker run -it -p 1313:1313 -u $(id -u):$(id -g) -v $(pwd):/site --name hugo hug
 参考文档：
 - [https://gohugo.io/installation/linux/](https://gohugo.io/installation/linux/)
 - [https://github.com/gohugoio/hugo](https://github.com/gohugoio/hugo)
+- [hugo-server-in-docker-container-not-reachable-in-windows-10](https://stackoverflow.com/questions/59008572/hugo-server-in-docker-container-not-reachable-in-windows-10)
