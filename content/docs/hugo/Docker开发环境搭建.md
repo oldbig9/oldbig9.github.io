@@ -50,6 +50,7 @@ docker run -it -p 1313:1313 -u $(id -u):$(id -g) -v $(pwd):/site --name hugo hug
 ```
 
 参考文档：
+
 - [https://gohugo.io/installation/linux/](https://gohugo.io/installation/linux/)
 - [https://github.com/gohugoio/hugo](https://github.com/gohugoio/hugo)
 - [hugo-server-in-docker-container-not-reachable-in-windows-10](https://stackoverflow.com/questions/59008572/hugo-server-in-docker-container-not-reachable-in-windows-10)

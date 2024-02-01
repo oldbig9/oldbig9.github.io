@@ -89,7 +89,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
 
 Gnome 主题网站[Cursors - Gnome-look.org](https://www.gnome-look.org/browse?cat=107&ord=latest)
 
-目前我使用的是 [Bibata-Modern-Amber](https://github.com/ful1e5/Bibata_Cursor)
+目前我使用的是 [Bibata-Modern-Amber](https://github.com/ful1e5/Bibata_Cursor)，该主题甚至支持个性化定制各种颜色的主题，详见github
 
 将压缩包下载之后解压并拷贝至用户目录下
 
@@ -192,7 +192,7 @@ https://appimage.github.io/apps/
 
 ### ubuntu无法识别u盘
 
-安装exfatprogs工具，待验证
+安装exfatprogs工具，自测该工具可以解决问题
 
 ```bash
 sudo apt install exfatprogs
@@ -210,8 +210,6 @@ python可以安装pylance插件
     "/home/wwf/.local/lib/python3.10/site-packages" // python本地安装包地址
 ],
 ```
-
-
 
 ### 内存占用过高，系统卡死
 
