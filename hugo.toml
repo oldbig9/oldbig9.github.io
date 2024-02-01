@@ -25,8 +25,8 @@ defaultContentLanguage = 'en'
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.tableOfContents]
-      endLevel = 3
       startLevel = 1
+      endLevel = 4
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true # https://jdhao.github.io/2019/12/29/hugo_html_not_shown/
