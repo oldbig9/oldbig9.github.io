@@ -229,18 +229,18 @@ defaultContentLanguage = 'en'
 
 [menu]
 [[menu.primary]]
-    name  = "Docs"
+    name  = "文档"
     url = "docs/"
     identifier = "docs"
     weight = 1
 
 [[menu.primary]]
-    name  = "Songci"
+    name  = "宋词"
     url = "songci/"
     identifier = "songci"
     weight = 2
 [[menu.primary]]
-    name  = "Note"
+    name  = "笔记"
     url = "note/"
     identifier = "note"
     weight = 3

@@ -35,7 +35,7 @@ hero:
 
   ctaButton:
     icon: rocket_launch
-    btnText: "Docs"
+    btnText: "文档"
     url: "docs"
   # cta2Button:
   #   icon: construction
