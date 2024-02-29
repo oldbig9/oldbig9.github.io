@@ -6,8 +6,7 @@ icon: "article"
 date: "2023-12-20T09:49:46+08:00"
 lastmod: "2023-12-20T09:49:46+08:00"
 draft: false
-toc: true
-tag:
+tags:
   - Go
 category:
   - tech

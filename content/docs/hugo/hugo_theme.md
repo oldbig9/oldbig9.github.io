@@ -6,9 +6,8 @@ icon: "article"
 date: "2023-10-12T10:13:48+08:00"
 lastmod: "2023-10-12T10:13:48+08:00"
 draft: true
-toc: true
-tag: 
-- hugo
+tags: 
+- Hugo
 ---
 
 ## lotusdocs

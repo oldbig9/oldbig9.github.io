@@ -6,8 +6,7 @@ icon: "article"
 date: "2024-01-31T16:52:54+08:00"
 lastmod: "2024-01-31T16:52:54+08:00"
 draft: false
-toc: true
-tag:
+tags:
   - Redis
 category:
   - tech

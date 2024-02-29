@@ -3,7 +3,7 @@ title: "lsof"
 date: 2023-01-28 12:55:51
 draft: false
 tags:
-  - linux
+  - Linux
 categories:
   - tech
 ---

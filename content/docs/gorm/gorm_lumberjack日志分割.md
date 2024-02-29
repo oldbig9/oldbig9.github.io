@@ -6,8 +6,7 @@ icon: "article"
 date: "2023-12-27T19:34:44+08:00"
 lastmod: "2023-12-27T19:34:44+08:00"
 draft: false
-toc: true
-tag:
+tags:
 - Go
 - Gorm
 - lumberjack

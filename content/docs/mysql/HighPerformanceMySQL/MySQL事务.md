@@ -6,7 +6,6 @@ icon: "article"
 date: "2023-10-11T16:11:36+08:00"
 lastmod: "2023-10-11T16:11:36+08:00"
 draft: false
-toc: true
 ---
 
 ## 事务的特性(ACID)

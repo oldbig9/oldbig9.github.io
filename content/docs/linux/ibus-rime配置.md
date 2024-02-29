@@ -6,7 +6,7 @@ tags:
   - Ubuntu
   - ibus
   - rime
-  - linux
+  - Linux
 categories:
   - tech
 ---

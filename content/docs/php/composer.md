@@ -6,7 +6,6 @@ icon: "article"
 date: "2023-12-29T16:05:42+08:00"
 lastmod: "2023-12-29T16:05:42+08:00"
 draft: false
-toc: true
 ---
 
 ## 安装 composer

@@ -3,7 +3,7 @@ title: "Rsync"
 date: 2023-09-25 14:57:39
 draft: false
 tags: 
-- linux
+- Linux
 categories:
 - tech
 ---

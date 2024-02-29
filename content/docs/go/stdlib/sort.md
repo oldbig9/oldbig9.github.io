@@ -6,8 +6,7 @@ icon: "article"
 date: "2023-10-17T13:48:20+08:00"
 lastmod: "2023-10-17T13:48:20+08:00"
 draft: false
-toc: true
-tag:
+tags:
   - Go
 ---
 

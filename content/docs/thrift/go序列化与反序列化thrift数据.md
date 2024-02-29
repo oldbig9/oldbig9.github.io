@@ -6,7 +6,6 @@ icon: "article"
 date: "2024-02-26T08:15:17Z"
 lastmod: "2024-02-26T08:15:17Z"
 draft: false
-toc: true
 tags: 
 - Go
 - thrift

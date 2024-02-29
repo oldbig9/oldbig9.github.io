@@ -4,9 +4,11 @@ description: "使用Hugo、Github Actions、Github Pages搭建静态博客网站
 date: 2022-12-26 22:38:14
 draft: false
 tags:
-- hugo
+- Hugo
 categories:
 - tech
+series:
+- Hugo
 ---
 
 ## 1.创建Github仓库

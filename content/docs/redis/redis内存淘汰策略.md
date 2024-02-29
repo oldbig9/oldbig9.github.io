@@ -6,7 +6,6 @@ icon: "article"
 date: "2023-12-19T20:57:54+08:00"
 lastmod: "2023-12-19T20:57:54+08:00"
 draft: false
-toc: true
 ---
 
 ## redis 内存淘汰策略

@@ -3,9 +3,9 @@ title: "ubuntu22.04安装"
 date: 2024-01-11 13:43:51
 draft: false
 tags:
-  - linux
-  - ubuntu
-  - gnome
+  - Linux
+  - Ubuntu
+  - Gnome
 categories:
   - tech
 ---

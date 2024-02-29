@@ -6,7 +6,13 @@ icon: "article"
 date: "2024-01-29T06:40:17Z"
 lastmod: "2024-01-29T06:40:17Z"
 draft: false
-toc: true
+tags:
+- Docker
+- Hugo
+categories:
+- tech
+series:
+- Hugo
 ---
 
 由于工作中 go 开发环境是 1.17，但 hugo 博客需要 go1.20 以上版本，所以打算搭建个简单的 docker 容器用于博客本地站点的部署环境，简单写了以下 Dockerfile
