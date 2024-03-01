@@ -8,7 +8,7 @@ lastmod: "2024-02-26T08:15:17Z"
 draft: false
 tags: 
 - Go
-- thrift
+- Thrift
 categories:
 - tech
 ---

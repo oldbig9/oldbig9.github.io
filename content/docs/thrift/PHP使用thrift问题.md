@@ -3,7 +3,7 @@ title: "PHP使用thrift问题"
 date: 2023-04-03 19:29:42
 draft: false
 tags:
-- thrift
+- Thrift
 - PHP
 categories:
 - tech
