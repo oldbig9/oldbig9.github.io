@@ -23,7 +23,7 @@ enableEmoji = true
   # dir name of your blog content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
   contentTypeName = "docs"
-  Toc = false
+  toc = false
 
   [params.header]
     logo = "jellyfish.png"

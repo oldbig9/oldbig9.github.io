@@ -8,5 +8,6 @@ lastmod: "{{ .Date }}"
 draft: true
 tags:
 categories:
+- tech
 series:
 ---

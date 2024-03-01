@@ -8,7 +8,7 @@ lastmod: "2023-12-20T09:49:46+08:00"
 draft: false
 tags:
   - Go
-category:
+categories:
   - tech
 ---
 
