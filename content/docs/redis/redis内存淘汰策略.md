@@ -9,7 +9,7 @@ draft: false
 tags:
 - Redis
 categories:
-- tach
+- tech
 ---
 
 ## redis 内存淘汰策略
