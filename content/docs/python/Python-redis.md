@@ -8,6 +8,7 @@ lastmod: "2023-12-19T10:29:19+08:00"
 draft: false
 tags: 
 - Python
+- Redis
 category:
 - tech
 ---

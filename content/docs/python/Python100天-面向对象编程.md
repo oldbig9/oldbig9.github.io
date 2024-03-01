@@ -3,9 +3,11 @@ title: "Python100天-面向对象编程"
 date: 2023-02-23 10:51:13
 draft: false
 tags:
-- Python
+  - Python
 categories:
-- tech
+  - tech
+series:
+ - Python100天
 ---
 
 ## 面向对象

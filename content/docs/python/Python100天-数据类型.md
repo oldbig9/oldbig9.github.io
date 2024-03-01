@@ -6,6 +6,8 @@ tags:
   - Python
 categories:
   - tech
+series:
+  - Python100天
 ---
 
 ## 字符串

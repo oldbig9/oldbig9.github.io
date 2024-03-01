@@ -6,6 +6,8 @@ tags:
   - Python
 categories:
   - tech
+series:
+  - Python100天
 ---
 
 ## 文件操作模式
