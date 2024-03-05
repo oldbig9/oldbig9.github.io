@@ -26,7 +26,7 @@ enableEmoji = true
   toc = false
 
   [params.header]
-    logo = "jellyfish.png"
+    logo = "lay_avatar.jpg"
 
   [params.footer]
     since = 2023
