@@ -24,7 +24,7 @@
 </div>
 {{ if or .Params.Toc $.Site.Params.Toc }}
 {{ if ne .Params.Toc false }}
-<section class="hidden-mobile prose prose-slate dark:prose-invert max-w-4xl lg:max-w-4xl sm:hidden mt-6 p-6">
+<section class="hidden-mobile prose prose-slate dark:prose-invert max-w-4xl lg:max-w-4xl sm:hidden mt-6 pl-6">
     <h2>{{ T "table_of_contents" }}</h2>
     <aside class="no-underline">{{ .TableOfContents }}</aside>
 </section>
