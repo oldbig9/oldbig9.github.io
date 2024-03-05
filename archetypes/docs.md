@@ -6,6 +6,7 @@ icon: "article"
 date: "{{ .Date }}"
 lastmod: "{{ .Date }}"
 draft: true
+toc: true
 tags:
 categories:
 - tech
