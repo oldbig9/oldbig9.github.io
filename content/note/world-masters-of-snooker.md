@@ -13,7 +13,7 @@ series:
 - 斯诺克
 ---
 
-![](http://localhost:1313/images/snooker/rocket.webp)
+![](https://oldbig9.github.io/hugo-blog/images/snooker/rocket.webp)
 
 ## 半决赛
 
