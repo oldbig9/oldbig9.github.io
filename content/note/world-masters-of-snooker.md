@@ -13,12 +13,9 @@ series:
 - 斯诺克
 ---
 
+![](https://oldbig9.github.io/hugo-blog/images/snooker/champion-2024-03-07.jpg)
+
+
 ![](https://oldbig9.github.io/hugo-blog/images/snooker/rocket.webp)
 
-## 半决赛
 
-2024年3月6日 22:00
-
-小特vs火箭
-
-小钢炮vs比利时子弹
