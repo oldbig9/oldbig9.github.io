@@ -44,6 +44,8 @@ payload(负载信息)
 
 jwt中称之为claims, claims中字段是可以自定义的，jwt官方定义了以下几种字段
 
+[https://datatracker.ietf.org/doc/html/rfc7519#section-4.1](https://datatracker.ietf.org/doc/html/rfc7519#section-4.1)
+
 |key|描述|
 |:--|:--|
 |iss|(issuer)发送者，即生成jwt token者|
