@@ -3,3 +3,10 @@ subtitle = "花自飘零水自流"
 
 # 展示阅读时间
 showReadingTime = false
+
+[social_media]
+  [[social_media.items]]
+    enabled = false
+    title = 'Github'
+    icon = 'brand-github'
+    link = ''

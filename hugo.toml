@@ -26,7 +26,7 @@ enableEmoji = true
   toc = false
 
   [params.header]
-    logo = "lay_avatar.jpg"
+    logo = "aoteman.jpg"
 
   [params.footer]
     since = 2023
@@ -56,6 +56,11 @@ enableEmoji = true
     identifier = "about"
     name = "关于"
     pageRef = "/about"
+    weight = 10
+  [[menu.main]]
+    identifier = "linqianxi"
+    name = "林浅喜"
+    pageRef = "https://space.bilibili.com/430967976"
     weight = 10
 
 [taxonomies]
