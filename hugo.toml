@@ -57,11 +57,6 @@ enableEmoji = true
     name = "关于"
     pageRef = "/about"
     weight = 10
-  [[menu.main]]
-    identifier = "linqianxi"
-    name = "林浅喜"
-    pageRef = "https://space.bilibili.com/430967976"
-    weight = 10
 
 [taxonomies]
   category = "categories"
