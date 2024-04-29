@@ -115,7 +115,7 @@ go tool pprof --http=:8080 http://localhost:6060/debug/pprof/heap
 
 服务器摘掉流量或流量高峰过去之后，分析 heap，可以观察出哪些变量没有被 GC 掉，由此判断内存泄露原因
 
-<img src="https://oldbig9.github.io/hugo-blog/images/heap_inuse_space.png" width="30%" height="auto">
+<img src="https://oldbig9.github.io/images/heap_inuse_space.png" width="30%" height="auto">
 
 ### goroutine 泄露
 

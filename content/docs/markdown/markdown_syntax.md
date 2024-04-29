@@ -61,7 +61,7 @@ categories:
 
 `![图片alt](图片链接 "图片title,不存在时展示")`
 
-![图片alt](https://oldbig9.github.io/hugo-blog/images/jellyfish.png)
+![图片alt](https://oldbig9.github.io/images/jellyfish.png)
 
 ### 6.超链接
 

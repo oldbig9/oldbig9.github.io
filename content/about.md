@@ -6,6 +6,6 @@ B站刷到的小姐姐，很喜欢这个up主，名字很好听，像小说的�
 
 小姐姐的狗子叫奥特曼......
 
-![林浅喜](https://oldbig9.github.io/hugo-blog/images/linqianxi.jpg)
+![林浅喜](https://oldbig9.github.io/images/linqianxi.jpg)
 
 {{< bilibili BV1x3411x7mT >}}
