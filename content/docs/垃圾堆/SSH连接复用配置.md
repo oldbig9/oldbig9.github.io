@@ -53,4 +53,17 @@ drwxr-xr-x 1 wwf wwf 4096 Dec 16 11:03 ../
 drwxrwxrwx 1 wwf wwf 4096 Dec 16 10:50 socks/
 ```
 
+### SSH报错 no hostkey alg
+
+在服务器执行scp命令时报错`no hostkey alg`
+
+原因是低版本ssh连接高版本ssh导致的，修改高版本ssh配置增加下面配置即可
+
+`vim /etc/ssh/sshd_condig`
+
+```bash
+HostKeyAlgorithms +ssh-rsa,ssh-dss
+```
+
+重启sshd服务`sudo systemctl restart sshd`
 
