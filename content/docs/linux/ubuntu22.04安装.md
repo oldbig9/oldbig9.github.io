@@ -223,3 +223,13 @@ sudo fallocate -l 16G /swapfile
 sudo mkswap /swapfile
 sudo swapon -a
 ```
+
+### 安装qq音乐无法打开(闪退)
+
+不得不吐槽一句，qq音乐都已经支持linux版了，网易云音乐反倒不支持了，差评
+
+解决方法：修改qq有音乐启动命令, 增加`--no-sandbox`参数
+
+```bash
+Exec=/opt/qqmusic/qqmusic --no-sandbox %U
+```
