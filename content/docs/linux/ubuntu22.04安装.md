@@ -248,8 +248,21 @@ Exec=/opt/qqmusic/qqmusic --no-sandbox %U
 2. mysql workbench需要重新安装ubuntu24.04版本
 3. ibus-rime输入法需要重新安装，还好原来配置都还可以用
 4. 终端软件hyper无法打开(未解决)，终端执行hyper命令没有任何报错信息，软件无法打开，只能暂时用gnome默认终端了，不喜欢tmux分屏，hyper比较易用，简单方便
+
+    执行`hyper -v`命令可以看到具体报错，原来是沙盒文件权限不对，修改后可以正常打开
+    ```bash
+    $ hyper -v
+    [132477:1209/115158.527355:FATAL:setuid_sandbox_host.cc(157)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /opt/Hyper/chrome-sandbox is owned by root and has mode 4755.
+    # 修改前
+    -rwxr-xr-x 1 root root  52K  1月  8  2023 chrome-sandbox,
+    # 修改后
+    -rwsr-xr-x 1 root root  52K  1月  8  2023 chrome-sandbox
+    ```
 5. 扩展显示器有问题(分数缩放问题)，不知道怎么折腾的就好了，分数缩放有个问题就是鼠标在笔记本显示器(高分辨率)上鼠标有时不显示(有点恼火)，羡慕同事显示器换了2k屏的显示器，也不知道我的戴尔显示器啥时候给我换新
 6. 优麒麟deb版微信不能用了，工作用不到直接卸载了(linux版qq已经出了，微信啥时候出官方版本呢)
+    
+    ps: 2024年11月6日，微信官方出linux测试版，11月12日才知道，嘎嘎好用
+
 7. 无法锁屏，使用快捷键或者锁屏图标进行锁屏不生效，但桌面直接卡死，无法操作，状态栏倒是可以操作，改了英伟达驱动仍没有解决，登录页面将xorg改成wayland后锁屏正常
 8. flameshot在wayland下无法截屏，看wayland官网给出的解决方案，修改快捷键命令为`sh -c "flameshot gui"`，截屏正常
 9. 其他bug待后续使用慢慢发现...... 
