@@ -5,8 +5,8 @@ description: ""
 icon: "article"
 date: "2025-01-13T16:38:34+08:00"
 lastmod: "2025-01-13T16:38:34+08:00"
-draft: true
-toc: true
+draft: false
+toc: false
 tags:
 - WSL
 categories:
