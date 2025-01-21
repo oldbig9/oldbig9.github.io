@@ -1,62 +1,89 @@
 baseURL = "https://oldbig9.github.io/"
 title = "OLDBIG9`小仓库"
 author = "Whatever"
-copyright = ""
-paginate = 10
-languageCode = 'zh-cn'
-defaultContentLanguage = "zh-cn"
+
+# 全局配置
+summaryLength = 100
 hasCJKLanguage = true
-enableInlineShortcodes = true
-ignoreErrors = ["error-remote-getjson"]
-enableRobotsTXT = true
-enableEmoji = true
+defaultContentLanguage = "zh-cn"
+
 
 [module]
+  
   [module.hugoVersion]
     extended = true
     min = "v0.95.0"
+  
   [[module.imports]]
-    path = "github.com/tomowang/hugo-theme-tailwind"
+    path = "github.com/nunocoracao/blowfish/v2"
     disable = false
 
+
 [params]
-  # dir name of your blog content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "docs"
-  toc = false
+  colorScheme = "blowfish" # blowfish (default), avocado, fire, ocean, forest, princess, neon, bloody, terminal, marvel, noir, autumn, congo, andslate.
+  # defaultBackgroundImage = "/img/background.svg"
+  defaultAppearance = "dark"
+  enableCodeCopy = true
+  enableSearch = true
+  highlightCurrentMenuArea = true
+  smartTOC = true
+  smartTOCHideUnfocusedChildren = true
+  dateFormat = "2006年1月2日 15:04:05"
 
-  [params.header]
-    logo = "aoteman.jpg"
+  [params.homepage]
+    layout = "profile" #  Valid values are page, profile, hero, card, background
+    layoutBackgroundBlur = true
+    # homepageImage = "/img/background.svg"
+    showRecent = false
+    showRecentItems = 3
 
-  [params.footer]
-    since = 2023
-    poweredby = true
+  [params.list]
+    showSummary = true
+    constrainItemsWidth = true
+    showCards = false
+    groupByYear = true
+    showHero = true
+    heroStyle = "background"
+
+  [params.article]
+    showTableOfContents = true
+    showHero = true
+    heroStyle = "background"
+    showReadingTime = false
+
 
 [menu]
 
   [[menu.main]]
     identifier = "Docs"
     name = "技术"
-    pageRef = "/"
+    pageRef = "/categories/tech"
     weight = 1
 
-   [[menu.main]]
+  [[menu.main]]
     identifier = "Songci"
     name = "宋词"
     pageRef = "/songci"
     weight = 2
 
-   [[menu.main]]
+  [[menu.main]]
     identifier = "Note"
     name = "笔记"
     pageRef = "/note"
     weight = 3
 
   [[menu.main]]
-    identifier = "about"
-    name = "关于"
-    pageRef = "/about"
+    identifier = "tags"
+    name = "标签"
+    pageRef = "/tags"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "linqianxi"
+    name = "林浅喜"
+    url = "https://space.bilibili.com/430967976"
     weight = 10
+
 
 [taxonomies]
   category = "categories"

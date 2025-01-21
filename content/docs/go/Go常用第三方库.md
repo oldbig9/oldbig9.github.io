@@ -8,68 +8,16 @@ categories:
   - tech
 ---
 
-## 日志库
-
-### [zap](https://github.com/uber-go/zap)
-
-```shell
-go get -u go.uber.org/zap
-```
-
-### 日志分割[lumberjack](https://github.com/natefinch/lumberjack)
-
-```shell
-go get -u github.com/natefinch/lumberjack
-```
-
-### [logrus](https://github.com/sirupsen/logrus)
-
-```shell
-go get -u github.com/sirupsen/logrus
-```
-
-## 数据库
-
-### [gorm](https://github.com/go-gorm/gorm)
-
-[文档](https://gorm.io/zh_CN/docs/index.html)
-
-```shell
-go get -u gorm.io/gorm
-```
-
-## JSON 库
-
-### [gjson](https://github.com/tidwall/gjson)
-
-```shell
-go get -u github.com/tidwall/gjson
-```
-
-## 配置管理库
-
-### viper
-
-[viper](https://github.com/spf13/viper)
-
-## cli 框架
-
-[cobra](https://github.com/spf13/cobra)
-
-## redis 分布式锁
-
-[redsync](https://github.com/go-redsync/redsync)
-
-## 熔断限流
-
-[sentinel-golang](https://github.com/alibaba/sentinel-golang)
-
-[文档](https://sentinelguard.io/zh-cn/docs/golang/basic-api-usage.html)
-
-## mock
-
-### [gomonkey](https://github.com/agiledragon/gomonkey)
-
-### [gomock](https://github.com/golang/mock)
+|功能|项目|备注|
+|:--|:--|:--|
+|日志|{{< github repo="uber-go/zap" >}}|`go get -u go.uber.org/zap`|
+|日志切割|{{< github repo="natefinch/lumberjack" >}}|`go get -u github.com/natefinch/lumberjack`|
+|orm|{{< github repo="go-gorm/gorm" >}}|`go get -u gorm.io/gorm`|
+|json|{{< github repo="tidwall/gjson" >}}|`go get -u github.com/tidwall/gjson`|
+|配置管理|{{< github repo="spf13/viper" >}}||
+|cli框架|{{< github repo="spf13/cobra" >}}||
+|熔断限流|{{< github repo="alibaba/sentinel-golang" >}}|[文档](https://sentinelguard.io/zh-cn/docs/golang/basic-api-usage.html)|
+|redis分布式锁|{{< github repo="go-redsync/redsync" >}}||
+|mock|{{< github repo="agiledragon/gomonkey" >}}||
 
 [参考](https://juejin.cn/post/7133520098123317256?searchId=202312271956026DC486012DB131F69B13)

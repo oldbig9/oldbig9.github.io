@@ -1,6 +1,6 @@
 ---
 weight: 100
-title: "WSL拉取代码失败问题"
+title: "WSL2问题集"
 description: ""
 icon: "article"
 date: "2025-01-13T16:38:34+08:00"
@@ -13,6 +13,8 @@ categories:
 - tech
 series:
 ---
+
+近期申领了新的工作笔记本，系统是windows，目前没有安装双系统，于是打算使用wsl环境进行开发
 
 环境
 
@@ -29,7 +31,7 @@ Windows 版本： 10.0.22631.4602
 
 ## git拉取代码卡主问题
 
-近期申领了新的工作笔记本，系统是windows，目前没有安装双系统，于是打算使用wsl环境进行开发。但在git拉取代码时发现拉取代码卡住了，没有报错信息
+在git拉取代码时发现拉取代码卡住了，没有报错信息
 
 参考文档[https://github.com/microsoft/WSL/issues/4253](https://github.com/microsoft/WSL/issues/4253)，执行如下命令得到解决
 

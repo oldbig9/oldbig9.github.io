@@ -16,4 +16,4 @@ series:
 
 使用gvm管理Go版本
 
-https://github.com/moovweb/gvm
+{{< github repo="moovweb/gvm" >}}

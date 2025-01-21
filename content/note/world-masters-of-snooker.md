@@ -13,8 +13,5 @@ series:
 - 斯诺克
 ---
 
-{{< bilibili BV13F4m1L7YL >}}
 
 ![](https://oldbig9.github.io/images/snooker/champion-2024-03-07.jpg)
-
-<!-- ![](https://oldbig9.github.io/images/snooker/rocket.webp) -->

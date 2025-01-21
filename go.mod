@@ -1,5 +1,9 @@
 module github.com/oldbig9/hugo-blog
 
-go 1.21.5
+go 1.23.1
 
-require github.com/tomowang/hugo-theme-tailwind v0.0.0-20240827154831-21ec731106f5 // indirect
+toolchain go1.23.5
+
+require (
+	github.com/nunocoracao/blowfish/v2 v2.81.0 // indirect
+)
