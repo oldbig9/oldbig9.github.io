@@ -1,0 +1,17 @@
+author ="Whatever"
+baseURL="https://oldbig9.github.io/"
+title  ="OLDBIG9`小仓库"
+
+# 全局配置
+defaultContentLanguage="zh-cn"
+languageCode          ="zh-cn"
+summaryLength         =100
+hasCJKLanguage        =true
+
+[sitemap]
+  changefreq='daily'
+  filename  ='sitemap.xml'
+  priority  =0.5
+
+[outputs]
+  home=["HTML", "RSS", "JSON"]
