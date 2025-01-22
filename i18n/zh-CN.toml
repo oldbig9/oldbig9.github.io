@@ -1,4 +1,2 @@
-[paginator]
-newer_posts = "上一页"
-older_posts = "下一页"
-
+[footer]
+  powered_by =  "Powered by {{ .Hugo }} &amp; {{ .Theme }}"

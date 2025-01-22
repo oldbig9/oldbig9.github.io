@@ -15,6 +15,9 @@ dateFormat = "2006年1月2日"
   showRecent = false
   showRecentItems = 3
 
+[header]
+  layout = "fixed-fill-blur" #  basic, fixed, fixed-fill, and fixed-fill-blur.
+
 [list]
   showSummary = true
   constrainItemsWidth = true

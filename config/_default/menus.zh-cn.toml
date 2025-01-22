@@ -24,6 +24,7 @@
 
 [[main]]
   identifier="linqianxi"
+  pre       ="link"
   name      ="林浅喜"
   url       ="https://space.bilibili.com/430967976" # 外部链接
   weight    =10
