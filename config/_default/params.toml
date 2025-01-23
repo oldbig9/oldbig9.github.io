@@ -1,4 +1,4 @@
-colorScheme = "blowfish" # blowfish (default), avocado, fire, ocean, forest, princess, neon, bloody, terminal, marvel, noir, autumn, congo, andslate.
+colorScheme = "noir" # blowfish (default), avocado, fire, ocean, forest, princess, neon, bloody, terminal, marvel, noir, autumn, congo, andslate.
 # defaultBackgroundImage = "/img/background.svg"
 defaultAppearance = "light"
 enableCodeCopy = true
@@ -7,13 +7,19 @@ highlightCurrentMenuArea = true
 smartTOC = true
 smartTOCHideUnfocusedChildren = true
 dateFormat = "2006年1月2日"
+# logo = "img/cat.png"
 
 [homepage]
-  layout = "profile" #  Valid values are page, profile, hero, card, background
-  layoutBackgroundBlur = true
+  layout = "hero" #  Valid values are page, profile, hero, card, background, custom
+  # layoutBackgroundBlur = true
   # homepageImage = "/img/background.svg"
-  showRecent = false
+  showRecent = true
   showRecentItems = 3
+
+[author]
+  name = "阿猫阿狗阿西吧"
+  image = "img/cat.png"
+  headline = "我有一片果园，自由却孤独地活着 - [林浅喜](https://space.bilibili.com/430967976)"
 
 [header]
   layout = "fixed-fill-blur" #  basic, fixed, fixed-fill, and fixed-fill-blur.
@@ -32,3 +38,4 @@ dateFormat = "2006年1月2日"
   heroStyle = "background"
   showReadingTime = false
   seriesOpened = true
+  showAuthor = false

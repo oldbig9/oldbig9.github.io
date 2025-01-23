@@ -1,12 +1,12 @@
 author ="Whatever"
 baseURL="https://oldbig9.github.io/"
-title  ="OLDBIG9`小仓库"
+title  ="阿猫阿狗阿西吧......"
 
 # 全局配置
 defaultContentLanguage="zh-cn"
-languageCode          ="zh-cn"
-summaryLength         =100
+summaryLength         =30
 hasCJKLanguage        =true
+enableRobotsTXT       =false
 
 [sitemap]
   changefreq='daily'
