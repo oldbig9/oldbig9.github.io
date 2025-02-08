@@ -12,12 +12,13 @@
 
 [[main]]
   identifier="Note"
-  name      ="笔记"
+  name      ="日志"
   pageRef   ="/note"
   weight    =3
 
 [[main]]
   identifier="tags"
+  pre       ="tag"
   name      ="标签"
   pageRef   ="/tags"
   weight    =4
