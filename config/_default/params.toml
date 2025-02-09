@@ -1,5 +1,5 @@
 colorScheme = "noir" # blowfish (default), avocado, fire, ocean, forest, princess, neon, bloody, terminal, marvel, noir, autumn, congo, andslate.
-# defaultBackgroundImage = "/img/background.svg"
+defaultBackgroundImage = "/img/background.svg"
 defaultAppearance = "light"
 enableCodeCopy = true
 enableSearch = true
@@ -12,7 +12,7 @@ dateFormat = "2006年1月2日"
 [homepage]
   layout = "hero" #  Valid values are page, profile, hero, card, background, custom
   # layoutBackgroundBlur = true
-  # homepageImage = "/img/background.svg"
+  homepageImage = "/img/background.svg"
   showRecent = true
   showRecentItems = 3
 
@@ -29,12 +29,12 @@ dateFormat = "2006年1月2日"
   constrainItemsWidth = true
   showCards = false
   groupByYear = true
-  showHero = true
+  showHero = false
   heroStyle = "background"
 
 [article]
   showTableOfContents = true
-  showHero = true
+  showHero = false
   heroStyle = "background"
   showReadingTime = false
   seriesOpened = true
