@@ -16,7 +16,9 @@ series:
 ---
 
 上周电脑突然崩溃了，没当回事
-![电脑崩溃截图](https://147.pink/images/20250217.jpg)
+{{< gallery >}}
+<img src="https://147.pink/images/20250217.jpg" class="grid-w80" />
+{{< /gallery >}}
 
 周一上班wsl系统无法进入，还有一部分代码没有提交（哭死），报错信息如下
 
@@ -35,5 +37,7 @@ PS C:\> wsl
 
 1. 去[github](https://github.com/microsoft/WSL/releases)下载wsl release版本
 2. 右键安装包->显示更多选项->修复
-![操作-1](https://147.pink/images/wsl-1.png)
-![操作-2](https://147.pink/images/wsl-2.png)
+{{< gallery >}}
+<img src="https://147.pink/images/wsl-1.png" class="grid-w50" />
+<img src="https://147.pink/images/wsl-2.png" class="grid-w50" />
+{{< /gallery >}}
