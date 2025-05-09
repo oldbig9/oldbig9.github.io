@@ -20,5 +20,6 @@ series:
 当时就想这不是稳了么，定了凌晨两点的闹钟观看第四阶段的比赛，也醒了，就是困得不行，再有就是比赛结果已经没有悬念了，所以没有继续观看。
 
 {{< gallery >}}
-<img src="https://147.pink/images/snooker/champion_zhaoxintong.jpg" class="grid-w100" />
+<img src="/images/snooker/champion_zhaoxintong.jpg" class="grid-w60" />
+<img src="/images/snooker/champion_zhaoxintong_2.jpg" class="grid-w40" />
 {{< /gallery >}}
