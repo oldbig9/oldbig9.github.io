@@ -1,0 +1,14 @@
+@font-face {
+    font-family: font;
+    src: url('/fonts/LXGWWenKai-Regular.ttf');
+}
+
+html {
+    font-family: font;
+}
+
+@layer base {
+    pre {
+        font-family: font;
+    }
+}
