@@ -10,7 +10,7 @@ dateFormat = "2006-01-02"
 # logo = "img/cat.png"
 
 [homepage]
-  layout = "hero" #  Valid values are page, profile, hero, card, background, custom
+  layout = "custom" #  Valid values are page, profile, hero, card, background, custom
   # layoutBackgroundBlur = true
   # homepageImage = "/img/cats.jpg"
   showRecent = true

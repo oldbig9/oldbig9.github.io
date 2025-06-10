@@ -1,9 +1,10 @@
 html {
     font-family: "lxgw wenkai";
+    font-size: 1.12rem;
 }
 
 @layer base {
     pre {
-        font-family: "lxgw wenkai", "Fira Code";
+        font-family: "lxgw wenkai", "fira code";
     }
 }
