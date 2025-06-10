@@ -1,9 +1,9 @@
 html {
-    font-family: "LXGWWENKAI-REGULAR", "霞鹜文楷";
+    font-family: "lxgw wenkai";
 }
 
 @layer base {
     pre {
-        font-family: "LXGWWENKAI-REGULAR", "霞鹜文楷", "Fira Code";
+        font-family: "lxgw wenkai", "Fira Code";
     }
 }
