@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历 - 张三</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: ['Noto Sans SC', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        dark: '#1f2937',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        @media print {
+            body, div, section {
+                print-color-adjust: exact !important;  /* 标准属性 */
+                -webkit-print-color-adjust: exact !important;  /* Chrome/Safari */
+            }
+            .print-btn {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <div class="max-w-4xl mx-auto my-8 p-6 bg-white shadow-lg rounded-lg print-shadow print-border">
+        <!-- 头部信息 -->
+        <header class="mb-8">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                <div>
+                    <h1 class="text-3xl font-bold text-dark mb-1">张三</h1>
+                    <h2 class="text-xl text-primary font-medium mb-2">前端开发工程师</h2>
+                    <p class="text-gray-600 max-w-lg">5年前端开发经验，精通React和Vue框架，有丰富的跨平台应用开发经验，热爱新技术探索和性能优化。</p>
+                </div>
+                <div class="mt-4 sm:mt-0">
+                    <ul class="space-y-1">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <span>zhangsan@example.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span>138-1234-5678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>北京市海淀区</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                            </svg>
+                            <span>github.com/zhangsan</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- 主体内容 -->
+        <main class="space-y-8">
+            <!-- 工作经历 -->
+            <section>
+                <h3 class="text-xl font-bold text-dark border-b-2 border-primary pb-1 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    工作经历
+                </h3>
+                <div class="space-y-6">
+                    <div class="pl-2 border-l-4 border-primary">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                            <h4 class="text-lg font-semibold">ABC科技有限公司 - 高级前端工程师</h4>
+                            <span class="text-gray-600 text-sm sm:text-base">2019年7月 - 至今</span>
+                        </div>
+                        <ul class="mt-2 list-disc list-inside space-y-1 text-gray-700">
+                            <li>负责公司核心产品的前端架构设计和开发，使用React + TypeScript技术栈</li>
+                            <li>主导前端性能优化项目，将页面加载时间减少40%，首屏渲染时间减少35%</li>
+                            <li>实现组件库的搭建和维护，提高团队开发效率30%以上</li>
+                            <li>带领3人前端小组，制定开发规范，进行代码审查和技术分享</li>
+                        </ul>
+                    </div>
+                    <div class="pl-2 border-l-4 border-primary">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                            <h4 class="text-lg font-semibold">XYZ互联网公司 - 前端开发工程师</h4>
+                            <span class="text-gray-600 text-sm sm:text-base">2017年3月 - 2019年6月</span>
+                        </div>
+                        <ul class="mt-2 list-disc list-inside space-y-1 text-gray-700">
+                            <li>参与公司多个Web项目的开发，主要负责用户交互和界面实现</li>
+                            <li>使用Vue.js开发后台管理系统，优化数据可视化展示</li>
+                            <li>参与移动端H5开发，实现响应式布局和性能优化</li>
+                            <li>协助后端完成API接口设计和联调工作</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 教育背景 -->
+            <section>
+                <h3 class="text-xl font-bold text-dark border-b-2 border-primary pb-1 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+                    </svg>
+                    教育背景
+                </h3>
+                <div class="pl-2 border-l-4 border-primary">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                        <h4 class="text-lg font-semibold">北京大学 - 计算机科学与技术 硕士</h4>
+                        <span class="text-gray-600 text-sm sm:text-base">2014年9月 - 2017年6月</span>
+                    </div>
+                    <p class="mt-1 text-gray-700">GPA: 3.8/4.0，研究方向：人机交互与前端技术</p>
+                </div>
+                <div class="pl-2 border-l-4 border-primary mt-4">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                        <h4 class="text-lg font-semibold">清华大学 - 软件工程 学士</h4>
+                        <span class="text-gray-600 text-sm sm:text-base">2010年9月 - 2014年6月</span>
+                    </div>
+                    <p class="mt-1 text-gray-700">GPA: 3.6/4.0，主修课程：数据结构、算法、Web开发</p>
+                </div>
+            </section>
+
+            <!-- 技能专长 -->
+            <section>
+                <h3 class="text-xl font-bold text-dark border-b-2 border-primary pb-1 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                    </svg>
+                    技能专长
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <h4 class="font-medium text-gray-800 mb-2">技术栈</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Vue.js</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">TypeScript</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Node.js</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Webpack</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-800 mb-2">其他技能</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">性能优化</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">单元测试</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">CI/CD</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">微前端</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">PWA</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 项目经验 -->
+            <section>
+                <h3 class="text-xl font-bold text-dark border-b-2 border-primary pb-1 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                    </svg>
+                    项目经验
+                </h3>
+                <div class="space-y-6">
+                    <div class="pl-2 border-l-4 border-primary">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                            <h4 class="text-lg font-semibold">企业级数据可视化平台</h4>
+                            <span class="text-gray-600 text-sm sm:text-base">2021年3月 - 2022年5月</span>
+                        </div>
+                        <p class="mt-1 text-gray-700">一个面向企业用户的数据分析和可视化平台，支持多种数据源接入和自定义报表生成。</p>
+                        <ul class="mt-2 list-disc list-inside space-y-1 text-gray-700">
+                            <li><span class="font-medium">技术栈：</span>React + TypeScript + ECharts + Node.js</li>
+                            <li><span class="font-medium">职责：</span>担任前端负责人，设计整体架构，开发核心可视化组件，优化大数据量下的渲染性能</li>
+                            <li><span class="font-medium">成果：</span>项目成功上线并服务50+企业客户，获得公司年度最佳项目奖</li>
+                        </ul>
+                    </div>
+                    <div class="pl-2 border-l-4 border-primary">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                            <h4 class="text-lg font-semibold">移动端电商H5应用</h4>
+                            <span class="text-gray-600 text-sm sm:text-base">2020年1月 - 2020年12月</span>
+                        </div>
+                        <p class="mt-1 text-gray-700">一个面向移动端的电商平台，包含商品展示、购物车、订单支付等完整功能。</p>
+                        <ul class="mt-2 list-disc list-inside space-y-1 text-gray-700">
+                            <li><span class="font-medium">技术栈：</span>Vue.js + Vant UI + Axios</li>
+                            <li><span class="font-medium">职责：</span>负责商品详情页和购物车模块开发，实现流畅的动画效果和良好的用户体验</li>
+                            <li><span class="font-medium">成果：</span>项目PV达到百万级别，转化率提升15%</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+             <!-- 打印按钮 -->
+        <div class="print-btn flex justify-end mb-4">
+            <button onclick="window.print()" class="flex items-center px-4 py-2 bg-primary text-white rounded-md hover:bg-blue-600 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+                </svg>
+                打印简历
+            </button>
+        </div>
+    </div>
+       
+</body>
+</html>
