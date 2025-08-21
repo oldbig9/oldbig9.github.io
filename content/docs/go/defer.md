@@ -13,9 +13,7 @@ categories:
 series:
 ---
 
-defer方法可以用来延迟执行函数，通常用来释放资源，如关闭文件、数据库连接等
-
-即使程序panic了，defer方法也会执行，这也是defer的一个重要特性，因此也可以用来打印panic堆栈信息
+defer方法可以用来延迟执行函数，通常用来释放资源，如关闭文件、数据库连接、方法监控打点等
 
 defer方法的定义不能在return之后，否则无法执行
 
@@ -90,8 +88,6 @@ func main() {
 }
 ```
 
-可以通过指针参数方式，来修改defer语句表达式的值
-
 ```go
 package main
 
@@ -101,10 +97,43 @@ import (
 
 func main() {
     x := 1
-    defer func(x *int){
-        fmt.Println("defer x: ", *x) // 2
-    }(&x)
+    defer foo(x) // 2
+    // 可以通过指针参数方式，来修改defer语句表达式的值
+    defer foo2(&x) // 4
     x++
     fmt.Println("x: ", x) // 2
+}
+
+func foo(x int) {
+    fmt.Println("foo x:", x * 2)
+}
+
+func foo2(x *int) {
+    fmt.Println("foo2 x:", *x * 2)
+}
+```
+
+
+## defer恢复panic
+
+即使程序panic了，defer方法也会执行，这也是defer的一个重要特性，因此也可以用来panic恢复，打印panic堆栈信息等
+
+```go
+package main
+
+import (
+    "fmt"
+    "runtime/debug"
+)
+
+func main() {
+    // defer输出panic日志
+    defer func() {
+        if err := recover(); err != nil {
+            fmt.Println("recover: ", err)
+            fmt.Println("stack trace: ", string(debug.Stack()))
+        }
+    }()
+    panic("panic")
 }
 ```
