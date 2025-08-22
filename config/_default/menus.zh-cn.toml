@@ -18,7 +18,6 @@
 
 [[main]]
   identifier="tags"
-  pre       ="tag"
   name      ="标签"
   pageRef   ="/tags"
   weight    =4

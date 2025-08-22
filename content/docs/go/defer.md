@@ -82,21 +82,6 @@ import (
 
 func main() {
     x := 1
-    defer fmt.Println("defer x: ", x) // 1
-    x++
-    fmt.Println("x: ", x) // 2
-}
-```
-
-```go
-package main
-
-import (
-    "fmt"
-)
-
-func main() {
-    x := 1
     defer foo(x) // 2
     // 可以通过指针参数方式，来修改defer语句表达式的值
     defer foo2(&x) // 4
