@@ -1,6 +1,6 @@
 ---
 weight: 100
-title: "面试题 Goweb框架"
+title: "Go web框架"
 description: ""
 icon: "article"
 date: "2025-09-09T15:22:58+08:00"
