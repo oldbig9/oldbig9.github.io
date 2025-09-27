@@ -35,6 +35,9 @@ categories:
 |uuid|[https://github.com/google/uuid](https://github.com/google/uuid)|`go get -u github.com/google/uuid`|
 |rpc|[https://github.com/grpc/grpc-go](https://github.com/grpc/grpc-go)|`go get -u google.golang.org/grpc` [https://grpc.io/docs/languages/go/](https://grpc.io/docs/languages/go/)|
 |服务注册发现|[https://github.com/etcd-io/etcd](https://github.com/etcd-io/etcd)||
+|并发编程|[https://github.com/sourcegraph/conc](https://github.com/sourcegraph/conc)||
+｜服务诊断|[https://github.com/google/gops](https://github.com/google/gops)|`$ go get -u github.com/google/gops`|
+|协程池|[https://github.com/panjf2000/ants](https://github.com/panjf2000/ants)||
 
 
 [参考](https://juejin.cn/post/7133520098123317256?searchId=202312271956026DC486012DB131F69B13)
