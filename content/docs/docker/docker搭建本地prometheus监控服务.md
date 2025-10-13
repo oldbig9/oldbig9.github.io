@@ -79,21 +79,32 @@ scrape_configs:
 package main
 
 import (
-	"fmt"
+	"context"
+	"log"
 	"net/http"
 	"time"
 
+	// web框架
 	"github.com/gin-gonic/gin"
+
+	// 监控
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/prometheus/client_golang/prometheus/push"
+
+	// 链路追踪
+	"go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin"
+	"go.opentelemetry.io/otel"
+	sdktrace "go.opentelemetry.io/otel/sdk/trace"
+	"go.opentelemetry.io/otel/trace"
 )
 
 var (
+	applicationName   = "gin-tmp"
 	httpRequestsTotal = promauto.NewCounterVec(
 		prometheus.CounterOpts{
-			Namespace: "gin-tmp",
+			Namespace: applicationName,
 			Name:      "http_requests_total",
 			Help:      "Count of all HTTP requests",
 		},
@@ -101,7 +112,7 @@ var (
 	)
 	httpRequestDuration = promauto.NewHistogramVec(
 		prometheus.HistogramOpts{
-			Namespace: "gin-tmp",
+			Namespace: applicationName,
 			Name:      "http_request_duration_seconds",
 			Help:      "Duration of HTTP requests",
 			Buckets:   []float64{0.1, 0.3, 0.5, 0.7, 1, 1.5, 2, 3},
@@ -111,13 +122,18 @@ var (
 )
 
 func main() {
+	otel.SetTracerProvider(sdktrace.NewTracerProvider(sdktrace.WithSampler(sdktrace.ParentBased(sdktrace.AlwaysSample()))))
 	r := gin.Default()
 	// 使用 Prometheus 中间件
 	r.Use(prometheusMiddleware())
+	// 使用 OpenTelemetry 中间件
+	r.Use(otelgin.Middleware(applicationName))
 	// 暴露 /metrics 路由
 	r.GET("/metrics", gin.WrapH(promhttp.Handler()))
 	// 示例业务路由
 	r.GET("/", func(c *gin.Context) {
+		foo(c.Request.Context())
+		log.Println(GetTraceInfo(c.Request.Context()))
 		c.JSON(200, gin.H{"message": "Hello, Prometheus!"})
 	})
 	r.Run(":8080")
@@ -140,8 +156,28 @@ func prometheusMiddleware() gin.HandlerFunc {
 			Push()
 
 		if err != nil {
-			fmt.Println("Could not push completion time to Pushgateway:", err)
+			log.Println("Could not push completion time to Pushgateway:", err)
 		}
 	}
+}
+
+func GetTraceInfo(ctx context.Context) (traceID string, spanID string, isSampled bool) {
+	spanCtx := trace.SpanContextFromContext(ctx)
+
+	if spanCtx.HasTraceID() {
+		traceID = spanCtx.TraceID().String()
+	}
+	if spanCtx.HasSpanID() {
+		spanID = spanCtx.SpanID().String()
+	}
+
+	isSampled = spanCtx.IsSampled()
+
+	return traceID, spanID, isSampled
+}
+
+func foo(ctx context.Context) {
+	spanCtx := trace.SpanContextFromContext(ctx)
+	log.Println(spanCtx.SpanID().String())
 }
 ```
