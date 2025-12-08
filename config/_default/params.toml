@@ -21,7 +21,7 @@ dateFormat = "2006-01-02"
   headline = "我有一片果园，自由却孤独地活着 - [林浅喜](https://space.bilibili.com/430967976)"
 
 [header]
-  layout = "fixed-fill-blur" #  basic, fixed, fixed-fill, and fixed-fill-blur.
+  layout = "fixed" #  basic, fixed, fixed-fill, and fixed-fill-blur.
 
 [list]
   showSummary = true
