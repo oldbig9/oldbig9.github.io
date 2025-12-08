@@ -1,4 +1,4 @@
-colorScheme = "ocean" # blowfish (default), avocado, fire, ocean, forest, princess, neon, bloody, terminal, marvel, noir, autumn, congo, andslate.
+colorScheme = "blowfish" # blowfish (default), avocado, fire, ocean, forest, princess, neon, bloody, terminal, marvel, noir, autumn, congo, andslate.
 defaultBackgroundImage = "/img/paint.jpg"
 defaultAppearance = "light"
 enableCodeCopy = true
