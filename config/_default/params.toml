@@ -1,5 +1,5 @@
 colorScheme = "ocean" # blowfish (default), avocado, fire, ocean, forest, princess, neon, bloody, terminal, marvel, noir, autumn, congo, andslate.
-# defaultBackgroundImage = "/img/background.svg"
+defaultBackgroundImage = "/img/paint.jpg"
 defaultAppearance = "light"
 enableCodeCopy = true
 enableSearch = true
@@ -7,12 +7,11 @@ highlightCurrentMenuArea = true
 smartTOC = true
 smartTOCHideUnfocusedChildren = true
 dateFormat = "2006-01-02"
-# logo = "img/cat.png"
 
 [homepage]
-  layout = "custom" #  Valid values are page, profile, hero, card, background, custom
-  # layoutBackgroundBlur = true
-  # homepageImage = "/img/cats.jpg"
+  layout = "background" #  Valid values are page, profile, hero, card, background, custom
+  layoutBackgroundBlur = true
+  homepageImage = "/img/paint.jpg"
   showRecent = true
   showRecentItems = 3
 
@@ -28,15 +27,21 @@ dateFormat = "2006-01-02"
   showSummary = true
   constrainItemsWidth = true
   showCards = false
-  groupByYear = true
-  showHero = false
+  groupByYear = false
+  showHero = true
   heroStyle = "background"
 
 [article]
   showTableOfContents = true
-  showHero = false
+  showHero = true
   heroStyle = "background"
   showReadingTime = false
   seriesOpened = true
   showAuthor = false
   showTaxonomies = true
+[taxonomy]
+  showHero = true
+  heroStyle = "background"
+[term]
+  showHero = true
+  heroStyle = "background"
