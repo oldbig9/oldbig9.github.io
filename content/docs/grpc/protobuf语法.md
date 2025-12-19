@@ -10,7 +10,7 @@ categories:
 
 ## 官方文档
 
-[https://protobuf.dev/programming-guides/proto3/](https://protobuf.dev/programming-guides/proto3/)
+[https://protobuf.com.cn/](https://protobuf.com.cn/)
 
 ## protobuf 基本类型
 
@@ -99,9 +99,8 @@ message UserResp {
 ```protobuf
 syntax = "proto3";
 
-package = "xxx";
-
-go_package = "xxxx";
+package xxx;
+option go_package = "目录;包名";
 
 message UserReq {
     uint64 uuid = 1; // uuid
@@ -116,9 +115,12 @@ message UserResp {
 ## 定义 service
 
 ```protobuf
-service FooService {
-  rpc GetSomething(GetSomethingRequest) returns (GetSomethingResponse);
-  rpc ListSomething(ListSomethingRequest) returns (ListSomethingResponse);
+service UserService {
+  rpc GetSomething(UserReq) returns (UserResp) {
+    option (google.api.http) = {
+      get: "/user/info" // http接口定义
+    };
+  };
 }
 ```
 

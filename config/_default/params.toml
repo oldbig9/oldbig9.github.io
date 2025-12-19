@@ -30,12 +30,16 @@ dateFormat = "2006-01-02"
   groupByYear = false
   showHero = true
   heroStyle = "background"
+  layoutBackgroundBlur = true
+  layoutBackgroundHeaderSpace = false
 
 [article]
   showTableOfContents = true
   showHero = true
   heroStyle = "background"
+  layoutBackgroundBlur = true
   showReadingTime = false
+  layoutBackgroundHeaderSpace = false
   seriesOpened = true
   showAuthor = false
   showTaxonomies = true

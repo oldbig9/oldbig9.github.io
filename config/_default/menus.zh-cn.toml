@@ -3,6 +3,22 @@
   name      ="技术"
   pageRef   ="/categories/tech"
   weight    =1
+  # 下拉子菜单
+  [[main]]
+    name = "golang"
+    parent = "Docs"
+    pageRef = "/docs/go"
+    weight = 1
+  [[main]]
+    name = "grpc"
+    parent = "Docs"
+    pageRef = "/docs/grpc"
+    weight = 1
+  [[main]]
+    name = "protobuf"
+    parent = "Docs"
+    pageRef = "/docs/protobuf"
+    weight = 1
 
 [[main]]
   identifier="Songci"
@@ -29,9 +45,4 @@
   url       ="https://space.bilibili.com/430967976" # 外部链接
   weight    =10
 
-  # 下拉子菜单
-  # [[main]]
-  #   name = "子菜单名"
-  #   parent = "父级菜单名"
-  #   pageRef = "samples"
-  #   weight = 20
+
