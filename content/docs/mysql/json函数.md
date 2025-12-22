@@ -1,6 +1,6 @@
 ---
 weight: 100
-title: "MySQL Json函数"
+title: "MySQL JSON函数"
 description: ""
 icon: "article"
 date: "2025-12-22T22:27:07+08:00"
@@ -13,6 +13,8 @@ categories:
 - tech
 series:
 ---
+
+[MySQL JSON函数参考](https://www.sjkjc.com/mysql-ref/json-functions/)
 
 项目需求，需要提供以下查询场景
 
@@ -31,7 +33,7 @@ CREATE TABLE `ad_material` (
 
 查询方式
 ### JSON_OVERLAPS
-MySQL版本8.0.17以上，查询json1字符串和json2字符串是否有任何一个相同的键或元素
+MySQL版本8.0.17以上，查询json1字符串和json2字符串是否有任何一个相同的键值对或元素
 ```sql
 mysql> select version();
 +-----------+
