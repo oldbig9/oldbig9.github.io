@@ -3,3 +3,4 @@ public/
 resources/
 assets/jsconfig.json
 static/html/profile-*
+_vendor/
