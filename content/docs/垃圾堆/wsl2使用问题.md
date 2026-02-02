@@ -57,7 +57,7 @@ wsl2设置了镜像网络模式
 
 上周电脑突然崩溃了，没当回事
 {{< gallery >}}
-<img src="https://147.pink/images/20250217.jpg" class="grid-w80" />
+<img src="https://oldbig9.github.io/images/20250217.jpg" class="grid-w80" />
 {{< /gallery >}}
 
 周一上班wsl系统无法进入，还有一部分代码没有提交（哭死），报错信息如下
@@ -78,6 +78,6 @@ PS C:\> wsl
 1. 去[github](https://github.com/microsoft/WSL/releases)下载wsl release版本
 2. 右键安装包->显示更多选项->修复
 {{< gallery >}}
-<img src="https://147.pink/images/wsl-1.png" class="grid-w50" />
-<img src="https://147.pink/images/wsl-2.png" class="grid-w50" />
+<img src="https://oldbig9.github.io/images/wsl-1.png" class="grid-w50" />
+<img src="https://oldbig9.github.io/images/wsl-2.png" class="grid-w50" />
 {{< /gallery >}}
