@@ -8,8 +8,23 @@ smartTOC = true
 smartTOCHideUnfocusedChildren = true
 dateFormat = "2006-01-02"
 
+# -- v3 新增配置 --
+enableA11y = false # 无障碍增强
+enableStructuredBreadcrumbs = false # SEO 结构化面包屑 (Schema.org BreadcrumbList)
+enableStyledScrollbar = true # 样式化滚动条 (设 false 用原生系统滚动条)
+replyByEmail = false # 文章页邮件回复按钮
+hotlinkFeatureImage = false # 允许热链特性图
+disableImageOptimization = false # 禁用图片优化
+disableImageOptimizationMD = false # 禁用 Markdown 图片优化
+backgroundCanvas = false # 将 defaultBackgroundImage 作为每页固定背景渲染
+backgroundImageWidth = 1200 # 背景图宽度
+thumbnailAspectRatio = "1.5" # 缩略图宽高比
+imagePosition = "50% 50%" # 图片位置
+fingerprintAlgorithm = "sha512" # 指纹算法: sha512 (默认), sha384, sha256
+
 [homepage]
   layout = "background" #  Valid values are page, profile, hero, card, background, custom
+  layoutSwitcher = false # 布局预览切换器 (v3 新增交互特性)
   layoutBackgroundBlur = true
   homepageImage = "/img/paint.jpg"
   showRecent = true
@@ -21,7 +36,13 @@ dateFormat = "2006-01-02"
   headline = "我有一片果园，自由却孤独地活着 - [林浅喜](https://space.bilibili.com/430967976)"
 
 [header]
-  layout = "fixed" #  basic, fixed, fixed-fill, and fixed-fill-blur.
+  layout = "fixed-fill-blur" #  basic, fixed, fixed-fill, and fixed-fill-blur, floating
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true # 回到顶部按钮 (v3 新增)
 
 [list]
   showSummary = true

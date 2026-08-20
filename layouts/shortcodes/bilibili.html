@@ -1,0 +1,44 @@
+{{- /* bilibili 视频嵌入 shortcode
+  用法:
+    {{< bilibili bvid="BV1xx411c7mD" >}}
+    {{< bilibili bvid="BV1xx411c7mD" p=2 >}}
+    {{< bilibili id="BV1xx411c7mD" >}}                 // id 是 bvid 的别名
+    {{< bilibili aid="170001" >}}                       // 用旧版 AV 号
+    {{< bilibili bvid="BV1xx411c7mD" autoplay=1 hq=0 >}}
+  参数:
+    bvid / id : BV 号 (二选一,与 aid 互斥)
+    aid       : AV 号 (数字部分即可,如 170001)
+    p         : 分 P,默认 1
+    hq        : 高清晰度,默认 1 (0/1)
+    autoplay  : 自动播放,默认 0 (0/1)
+    danmaku   : 弹幕开关,默认 1 (0/1)
+    ratio     : 宽高比,默认 "16:9",可选 "4:3" / "16:9"
+*/ -}}
+{{- $bvid := .Get "bvid" | default (.Get "id") -}}
+{{- $aid := .Get "aid" -}}
+{{- if and (not $bvid) (not $aid) -}}
+  {{- errorf "bilibili shortcode 需要至少一个参数: bvid 或 aid (如 {{< bilibili bvid=\"BV1xx411c7mD\" >}})" -}}
+{{- end -}}
+{{- if and $bvid $aid -}}
+  {{- errorf "bilibili shortcode 不能同时指定 bvid 和 aid,请只用其中一个" -}}
+{{- end -}}
+{{- $p := .Get "p" | default 1 -}}
+{{- $hq := .Get "hq" | default 1 -}}
+{{- $autoplay := .Get "autoplay" | default 0 -}}
+{{- $danmaku := .Get "danmaku" | default 1 -}}
+{{- $ratio := .Get "ratio" | default "16:9" -}}
+{{- $aspect := cond (eq $ratio "4:3") "4 / 3" "16 / 9" -}}
+{{- $src := printf "https://player.bilibili.com/player.html?%s=%s&page=%v&high_quality=%v&autoplay=%v&danmaku=%v" (cond (ne $aid "") "aid" "bvid") (cond (ne $aid "") $aid $bvid) $p $hq $autoplay $danmaku -}}
+<div class="bilibili-embed" style="width:65ch;max-width:100%;aspect-ratio:{{ $aspect | safeCSS }};">
+  <iframe
+    src="{{ $src }}"
+    scrolling="no"
+    border="0"
+    frameborder="0"
+    framespacing="0"
+    allowfullscreen="true"
+    loading="lazy"
+    referrerpolicy="no-referrer"
+    style="width:100%;height:100%;border:0;display:block;"
+  ></iframe>
+</div>
