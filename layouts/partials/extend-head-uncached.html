@@ -8,3 +8,16 @@
     <script defer src="{{ $js.RelPermalink }}"></script>
   {{ end }}
 {{ end }}
+
+{{/* PWA: 全站注册 Service Worker + manifest */}}
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#3b82f6">
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').catch(function (e) {
+        console.warn('SW register failed:', e);
+      });
+    });
+  }
+</script>
