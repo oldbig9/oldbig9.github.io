@@ -1,4 +1,5 @@
 .idea/
+.claude/
 public/
 resources/
 assets/jsconfig.json

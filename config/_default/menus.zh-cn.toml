@@ -39,6 +39,18 @@
   weight    =4
 
 [[main]]
+  identifier="Tools"
+  name      ="工具"
+  pageRef   ="/tools"
+  weight    =5
+  # 下拉子菜单
+  [[main]]
+    name = "JSON 工具"
+    parent = "Tools"
+    pageRef = "/tools/json-format"
+    weight = 1
+
+[[main]]
   identifier="linqianxi"
   pre       ="link"
   name      ="林浅喜"

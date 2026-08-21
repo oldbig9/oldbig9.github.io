@@ -1,0 +1,10 @@
+{{/* 工具页按需加载 JS/CSS，不污染全站 */}}
+{{ with . }}
+  {{ if eq .Layout "tool" }}
+    {{ $css := resources.Get "css/tools.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+    {{ $js := resources.Get "js/tools/json.js" | js.Build | minify | fingerprint }}
+    <script defer src="{{ $js.RelPermalink }}"></script>
+  {{ end }}
+{{ end }}
