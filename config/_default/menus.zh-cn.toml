@@ -49,6 +49,11 @@
     parent = "Tools"
     pageRef = "/tools/json-format"
     weight = 1
+  [[main]]
+    name = "时间戳工具"
+    parent = "Tools"
+    pageRef = "/tools/timestamp"
+    weight = 2
 
 [[main]]
   identifier="linqianxi"

@@ -4,8 +4,18 @@
     {{ $css := resources.Get "css/tools.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 
-    {{ $js := resources.Get "js/tools/json.js" | js.Build | minify | fingerprint }}
-    <script defer src="{{ $js.RelPermalink }}"></script>
+    {{ $tool := .Params.tool | default "json" }}
+    {{/* 时间戳工具依赖 flatpickr CSS */}}
+    {{ if eq $tool "timestamp" }}
+      {{ $fpCss := resources.Get "vendor/flatpickr/flatpickr.min.css" | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ $fpCss.RelPermalink }}">
+    {{ end }}
+
+    {{ $jsPath := printf "js/tools/%s.js" $tool }}
+    {{ $js := resources.Get $jsPath | js.Build | minify | fingerprint }}
+    {{ with $js }}
+      <script defer src="{{ .RelPermalink }}"></script>
+    {{ end }}
   {{ end }}
 {{ end }}
 
