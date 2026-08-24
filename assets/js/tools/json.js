@@ -152,6 +152,18 @@
       inputEl.style.height = Math.max(200, inputEl.scrollHeight) + 'px';
     }
     inputEl.addEventListener('input', autoResize);
+    // 失焦时自动格式化(若有有效输入)
+    inputEl.addEventListener('blur', function () {
+      var input = inputEl.value;
+      if (!input.trim()) return;
+      try {
+        lastResult = JSON.stringify(JSON.parse(input), null, 2);
+        outputCode.innerHTML = formatJSON(input);
+        showOk(statusEl, '已自动格式化');
+      } catch (err) {
+        showError(statusEl, '解析失败：' + err.message);
+      }
+    });
     autoResize();
 
     renderHistory(historyContainer, inputEl);
